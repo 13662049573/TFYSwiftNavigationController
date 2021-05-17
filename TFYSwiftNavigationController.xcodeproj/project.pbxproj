@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		365195CB264F8B5B00177C71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365195C9264F8B5B00177C71 /* Main.storyboard */; };
+		365195CD264F8B5C00177C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365195CC264F8B5C00177C71 /* Assets.xcassets */; };
+		365195D0264F8B5C00177C71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365195CE264F8B5C00177C71 /* LaunchScreen.storyboard */; };
+		365195DB264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195DA264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift */; };
+		365195E6264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195E5264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift */; };
+		3651960B264F8BAB00177C71 /* TFYNavigationBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365195F5264F8BAB00177C71 /* TFYNavigationBar.xcassets */; };
+		3651960C264F8BAB00177C71 /* UINavigationBar+ITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195F7264F8BAB00177C71 /* UINavigationBar+ITools.swift */; };
+		3651960D264F8BAB00177C71 /* UITableViewController+ITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195F8264F8BAB00177C71 /* UITableViewController+ITools.swift */; };
+		3651960E264F8BAB00177C71 /* UIViewController+ITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195F9264F8BAB00177C71 /* UIViewController+ITools.swift */; };
+		3651960F264F8BAB00177C71 /* TFYNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195FA264F8BAB00177C71 /* TFYNavigationBar.swift */; };
+		36519610264F8BAB00177C71 /* UINavigationController+ITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195FB264F8BAB00177C71 /* UINavigationController+ITools.swift */; };
+		36519611264F8BAB00177C71 /* TFYConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195FC264F8BAB00177C71 /* TFYConfiguration.swift */; };
+		36519612264F8BAB00177C71 /* TFYBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195FD264F8BAB00177C71 /* TFYBarButtonItem.swift */; };
+		36519613264F8BAB00177C71 /* NavigationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195FF264F8BAB00177C71 /* NavigationBase.swift */; };
+		36519614264F8BAB00177C71 /* TFYNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519600264F8BAB00177C71 /* TFYNavigationItem.swift */; };
+		36519615264F8BAB00177C71 /* TFYAssociatedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519601264F8BAB00177C71 /* TFYAssociatedKeys.swift */; };
+		36519616264F8BAB00177C71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519603264F8BAB00177C71 /* ViewController.swift */; };
+		36519617264F8BAB00177C71 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36519604264F8BAB00177C71 /* MainViewController.xib */; };
+		36519618264F8BAB00177C71 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519605264F8BAB00177C71 /* NextViewController.swift */; };
+		36519619264F8BAB00177C71 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519606264F8BAB00177C71 /* MainViewController.swift */; };
+		3651961A264F8BAB00177C71 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519607264F8BAB00177C71 /* TableViewController.swift */; };
+		3651961B264F8BAB00177C71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519609264F8BAB00177C71 /* AppDelegate.swift */; };
+		3651961C264F8BAB00177C71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651960A264F8BAB00177C71 /* SceneDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		365195D7264F8B5C00177C71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 365195B8264F8B5B00177C71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 365195BF264F8B5B00177C71;
+			remoteInfo = TFYSwiftNavigationController;
+		};
+		365195E2264F8B5C00177C71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 365195B8264F8B5B00177C71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 365195BF264F8B5B00177C71;
+			remoteInfo = TFYSwiftNavigationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		365195C0264F8B5B00177C71 /* TFYSwiftNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFYSwiftNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		365195CA264F8B5B00177C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		365195CC264F8B5C00177C71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		365195CF264F8B5C00177C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		365195D1264F8B5C00177C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365195D6264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFYSwiftNavigationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		365195DA264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftNavigationControllerTests.swift; sourceTree = "<group>"; };
+		365195DC264F8B5C00177C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365195E1264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFYSwiftNavigationControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		365195E5264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftNavigationControllerUITests.swift; sourceTree = "<group>"; };
+		365195E7264F8B5C00177C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365195F5264F8BAB00177C71 /* TFYNavigationBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TFYNavigationBar.xcassets; sourceTree = "<group>"; };
+		365195F7264F8BAB00177C71 /* UINavigationBar+ITools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+ITools.swift"; sourceTree = "<group>"; };
+		365195F8264F8BAB00177C71 /* UITableViewController+ITools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+ITools.swift"; sourceTree = "<group>"; };
+		365195F9264F8BAB00177C71 /* UIViewController+ITools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ITools.swift"; sourceTree = "<group>"; };
+		365195FA264F8BAB00177C71 /* TFYNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFYNavigationBar.swift; sourceTree = "<group>"; };
+		365195FB264F8BAB00177C71 /* UINavigationController+ITools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ITools.swift"; sourceTree = "<group>"; };
+		365195FC264F8BAB00177C71 /* TFYConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFYConfiguration.swift; sourceTree = "<group>"; };
+		365195FD264F8BAB00177C71 /* TFYBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFYBarButtonItem.swift; sourceTree = "<group>"; };
+		365195FF264F8BAB00177C71 /* NavigationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBase.swift; sourceTree = "<group>"; };
+		36519600264F8BAB00177C71 /* TFYNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFYNavigationItem.swift; sourceTree = "<group>"; };
+		36519601264F8BAB00177C71 /* TFYAssociatedKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFYAssociatedKeys.swift; sourceTree = "<group>"; };
+		36519603264F8BAB00177C71 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36519604264F8BAB00177C71 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		36519605264F8BAB00177C71 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		36519606264F8BAB00177C71 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		36519607264F8BAB00177C71 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		36519609264F8BAB00177C71 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3651960A264F8BAB00177C71 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		365195BD264F8B5B00177C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365195D3264F8B5C00177C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365195DE264F8B5C00177C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		365195B7264F8B5B00177C71 = {
+			isa = PBXGroup;
+			children = (
+				365195C2264F8B5B00177C71 /* TFYSwiftNavigationController */,
+				365195D9264F8B5C00177C71 /* TFYSwiftNavigationControllerTests */,
+				365195E4264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests */,
+				365195C1264F8B5B00177C71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		365195C1264F8B5B00177C71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				365195C0264F8B5B00177C71 /* TFYSwiftNavigationController.app */,
+				365195D6264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.xctest */,
+				365195E1264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		365195C2264F8B5B00177C71 /* TFYSwiftNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				36519608264F8BAB00177C71 /* AppDelegate */,
+				36519602264F8BAB00177C71 /* Class */,
+				365195F3264F8BAB00177C71 /* TFYSwiftNavigationKit */,
+				365195C9264F8B5B00177C71 /* Main.storyboard */,
+				365195CC264F8B5C00177C71 /* Assets.xcassets */,
+				365195CE264F8B5C00177C71 /* LaunchScreen.storyboard */,
+				365195D1264F8B5C00177C71 /* Info.plist */,
+			);
+			path = TFYSwiftNavigationController;
+			sourceTree = "<group>";
+		};
+		365195D9264F8B5C00177C71 /* TFYSwiftNavigationControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				365195DA264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift */,
+				365195DC264F8B5C00177C71 /* Info.plist */,
+			);
+			path = TFYSwiftNavigationControllerTests;
+			sourceTree = "<group>";
+		};
+		365195E4264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				365195E5264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift */,
+				365195E7264F8B5C00177C71 /* Info.plist */,
+			);
+			path = TFYSwiftNavigationControllerUITests;
+			sourceTree = "<group>";
+		};
+		365195F3264F8BAB00177C71 /* TFYSwiftNavigationKit */ = {
+			isa = PBXGroup;
+			children = (
+				365195F4264F8BAB00177C71 /* Xcassets */,
+				365195F6264F8BAB00177C71 /* Extension */,
+				365195FE264F8BAB00177C71 /* Base */,
+			);
+			path = TFYSwiftNavigationKit;
+			sourceTree = "<group>";
+		};
+		365195F4264F8BAB00177C71 /* Xcassets */ = {
+			isa = PBXGroup;
+			children = (
+				365195F5264F8BAB00177C71 /* TFYNavigationBar.xcassets */,
+			);
+			path = Xcassets;
+			sourceTree = "<group>";
+		};
+		365195F6264F8BAB00177C71 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				365195F7264F8BAB00177C71 /* UINavigationBar+ITools.swift */,
+				365195F8264F8BAB00177C71 /* UITableViewController+ITools.swift */,
+				365195F9264F8BAB00177C71 /* UIViewController+ITools.swift */,
+				365195FA264F8BAB00177C71 /* TFYNavigationBar.swift */,
+				365195FB264F8BAB00177C71 /* UINavigationController+ITools.swift */,
+				365195FC264F8BAB00177C71 /* TFYConfiguration.swift */,
+				365195FD264F8BAB00177C71 /* TFYBarButtonItem.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		365195FE264F8BAB00177C71 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				365195FF264F8BAB00177C71 /* NavigationBase.swift */,
+				36519600264F8BAB00177C71 /* TFYNavigationItem.swift */,
+				36519601264F8BAB00177C71 /* TFYAssociatedKeys.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		36519602264F8BAB00177C71 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				36519603264F8BAB00177C71 /* ViewController.swift */,
+				36519604264F8BAB00177C71 /* MainViewController.xib */,
+				36519605264F8BAB00177C71 /* NextViewController.swift */,
+				36519606264F8BAB00177C71 /* MainViewController.swift */,
+				36519607264F8BAB00177C71 /* TableViewController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		36519608264F8BAB00177C71 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				36519609264F8BAB00177C71 /* AppDelegate.swift */,
+				3651960A264F8BAB00177C71 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		365195BF264F8B5B00177C71 /* TFYSwiftNavigationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365195EA264F8B5C00177C71 /* Build configuration list for PBXNativeTarget "TFYSwiftNavigationController" */;
+			buildPhases = (
+				365195BC264F8B5B00177C71 /* Sources */,
+				365195BD264F8B5B00177C71 /* Frameworks */,
+				365195BE264F8B5B00177C71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFYSwiftNavigationController;
+			productName = TFYSwiftNavigationController;
+			productReference = 365195C0264F8B5B00177C71 /* TFYSwiftNavigationController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		365195D5264F8B5C00177C71 /* TFYSwiftNavigationControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365195ED264F8B5C00177C71 /* Build configuration list for PBXNativeTarget "TFYSwiftNavigationControllerTests" */;
+			buildPhases = (
+				365195D2264F8B5C00177C71 /* Sources */,
+				365195D3264F8B5C00177C71 /* Frameworks */,
+				365195D4264F8B5C00177C71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				365195D8264F8B5C00177C71 /* PBXTargetDependency */,
+			);
+			name = TFYSwiftNavigationControllerTests;
+			productName = TFYSwiftNavigationControllerTests;
+			productReference = 365195D6264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		365195E0264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365195F0264F8B5C00177C71 /* Build configuration list for PBXNativeTarget "TFYSwiftNavigationControllerUITests" */;
+			buildPhases = (
+				365195DD264F8B5C00177C71 /* Sources */,
+				365195DE264F8B5C00177C71 /* Frameworks */,
+				365195DF264F8B5C00177C71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				365195E3264F8B5C00177C71 /* PBXTargetDependency */,
+			);
+			name = TFYSwiftNavigationControllerUITests;
+			productName = TFYSwiftNavigationControllerUITests;
+			productReference = 365195E1264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		365195B8264F8B5B00177C71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					365195BF264F8B5B00177C71 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					365195D5264F8B5C00177C71 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 365195BF264F8B5B00177C71;
+					};
+					365195E0264F8B5C00177C71 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 365195BF264F8B5B00177C71;
+					};
+				};
+			};
+			buildConfigurationList = 365195BB264F8B5B00177C71 /* Build configuration list for PBXProject "TFYSwiftNavigationController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 365195B7264F8B5B00177C71;
+			productRefGroup = 365195C1264F8B5B00177C71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				365195BF264F8B5B00177C71 /* TFYSwiftNavigationController */,
+				365195D5264F8B5C00177C71 /* TFYSwiftNavigationControllerTests */,
+				365195E0264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		365195BE264F8B5B00177C71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365195D0264F8B5C00177C71 /* LaunchScreen.storyboard in Resources */,
+				3651960B264F8BAB00177C71 /* TFYNavigationBar.xcassets in Resources */,
+				36519617264F8BAB00177C71 /* MainViewController.xib in Resources */,
+				365195CD264F8B5C00177C71 /* Assets.xcassets in Resources */,
+				365195CB264F8B5B00177C71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365195D4264F8B5C00177C71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365195DF264F8B5C00177C71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		365195BC264F8B5B00177C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36519614264F8BAB00177C71 /* TFYNavigationItem.swift in Sources */,
+				3651960F264F8BAB00177C71 /* TFYNavigationBar.swift in Sources */,
+				3651961A264F8BAB00177C71 /* TableViewController.swift in Sources */,
+				3651960D264F8BAB00177C71 /* UITableViewController+ITools.swift in Sources */,
+				36519616264F8BAB00177C71 /* ViewController.swift in Sources */,
+				3651960E264F8BAB00177C71 /* UIViewController+ITools.swift in Sources */,
+				36519612264F8BAB00177C71 /* TFYBarButtonItem.swift in Sources */,
+				36519619264F8BAB00177C71 /* MainViewController.swift in Sources */,
+				36519610264F8BAB00177C71 /* UINavigationController+ITools.swift in Sources */,
+				36519611264F8BAB00177C71 /* TFYConfiguration.swift in Sources */,
+				3651961B264F8BAB00177C71 /* AppDelegate.swift in Sources */,
+				36519618264F8BAB00177C71 /* NextViewController.swift in Sources */,
+				36519615264F8BAB00177C71 /* TFYAssociatedKeys.swift in Sources */,
+				3651961C264F8BAB00177C71 /* SceneDelegate.swift in Sources */,
+				3651960C264F8BAB00177C71 /* UINavigationBar+ITools.swift in Sources */,
+				36519613264F8BAB00177C71 /* NavigationBase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365195D2264F8B5C00177C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365195DB264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365195DD264F8B5C00177C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365195E6264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		365195D8264F8B5C00177C71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 365195BF264F8B5B00177C71 /* TFYSwiftNavigationController */;
+			targetProxy = 365195D7264F8B5C00177C71 /* PBXContainerItemProxy */;
+		};
+		365195E3264F8B5C00177C71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 365195BF264F8B5B00177C71 /* TFYSwiftNavigationController */;
+			targetProxy = 365195E2264F8B5C00177C71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		365195C9264F8B5B00177C71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				365195CA264F8B5B00177C71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		365195CE264F8B5C00177C71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				365195CF264F8B5C00177C71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		365195E8264F8B5C00177C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		365195E9264F8B5C00177C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		365195EB264F8B5C00177C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFYSwiftNavigationController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfy.TFYSwiftNavigationController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		365195EC264F8B5C00177C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFYSwiftNavigationController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfy.TFYSwiftNavigationController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		365195EE264F8B5C00177C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFYSwiftNavigationControllerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfy.TFYSwiftNavigationControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFYSwiftNavigationController.app/TFYSwiftNavigationController";
+			};
+			name = Debug;
+		};
+		365195EF264F8B5C00177C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFYSwiftNavigationControllerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfy.TFYSwiftNavigationControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFYSwiftNavigationController.app/TFYSwiftNavigationController";
+			};
+			name = Release;
+		};
+		365195F1264F8B5C00177C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFYSwiftNavigationControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfy.TFYSwiftNavigationControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TFYSwiftNavigationController;
+			};
+			name = Debug;
+		};
+		365195F2264F8B5C00177C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFYSwiftNavigationControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfy.TFYSwiftNavigationControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TFYSwiftNavigationController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		365195BB264F8B5B00177C71 /* Build configuration list for PBXProject "TFYSwiftNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365195E8264F8B5C00177C71 /* Debug */,
+				365195E9264F8B5C00177C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365195EA264F8B5C00177C71 /* Build configuration list for PBXNativeTarget "TFYSwiftNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365195EB264F8B5C00177C71 /* Debug */,
+				365195EC264F8B5C00177C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365195ED264F8B5C00177C71 /* Build configuration list for PBXNativeTarget "TFYSwiftNavigationControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365195EE264F8B5C00177C71 /* Debug */,
+				365195EF264F8B5C00177C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365195F0264F8B5C00177C71 /* Build configuration list for PBXNativeTarget "TFYSwiftNavigationControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365195F1264F8B5C00177C71 /* Debug */,
+				365195F2264F8B5C00177C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 365195B8264F8B5B00177C71 /* Project object */;
+}
