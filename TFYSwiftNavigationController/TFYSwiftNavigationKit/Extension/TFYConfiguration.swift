@@ -26,7 +26,7 @@ extension UINavigationController {
         
         public var shadowImage: UIImage?
         
-        // Hides shadow image.
+        // 隐藏的影子图像。
         public var isShadowHidden: Bool = false
         
         public var titleTextAttributes: [NSAttributedString.Key : Any]?
@@ -37,7 +37,7 @@ extension UINavigationController {
         
         public var statusBarStyle: UIStatusBarStyle = .default
         
-        /// Additional height for the navigation bar.
+        /// 导航栏的额外高度。
         public var additionalHeight: CGFloat = 0
         
         public var shadow: NavigationShadow?
@@ -57,7 +57,7 @@ extension UINavigationController {
 public extension UINavigationController.Configuration {
     
     @available(iOS 11.0, *)
-    /// Padding of navigation bar content view.
+    /// 导航栏内容视图的填充。
     var layoutPaddings: UIEdgeInsets {
         get { _layoutPaddings }
         set { _layoutPaddings = newValue }

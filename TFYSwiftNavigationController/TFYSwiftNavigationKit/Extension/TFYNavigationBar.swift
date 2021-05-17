@@ -9,10 +9,10 @@ import UIKit
 
 open class TFYNavigationBar: UINavigationBar {
     
-    /// automatically adjusts position when view layout
+    /// 自动调整位置时，视图布局
     open var automaticallyAdjustsPosition: Bool = true
     
-    /// Additional height for the navigation bar.
+    /// 更改导航栏高度
     open var additionalHeight: CGFloat = 0 {
         didSet {
             frame.size.height = barHeight + _additionalHeight
@@ -20,21 +20,21 @@ open class TFYNavigationBar: UINavigationBar {
         }
     }
     
-    /// Hides shadow image
+    /// 隐藏导航栏下面的黑线
     open var isShadowHidden: Bool = false {
         didSet {
             guard let background = subviews.first else { return }
             background.clipsToBounds = isShadowHidden
         }
     }
-    
+    /// 状态栏颜色
     open var statusBarStyle: UIStatusBarStyle = .default {
         didSet {
             superNavigationBar?.barStyle = superBarStyle
         }
     }
     
-    /// Bar button item to use for the back button in the child navigation item.
+    /// 用于子导航项中的后退按钮的栏按钮项。
     open var backBarButtonItem: TFYBarButtonItem? {
         didSet {
             backBarButtonItem?.navigationController = viewController?.navigationController
@@ -43,14 +43,14 @@ open class TFYNavigationBar: UINavigationBar {
         }
     }
     
+    /// 导航栏内容视图的填充。
     @available(iOS 11.0, *)
-    /// Padding of navigation bar content view.
     open var layoutPaddings: UIEdgeInsets {
         get { _layoutPaddings }
         set { _layoutPaddings = newValue }
     }
     
-    /// Additional view at the bottom of the navigation bar
+    /// 导航栏底部的附加视图
     open var additionalView: UIView? {
         didSet {
             guard let additionalView = additionalView else {
@@ -61,7 +61,7 @@ open class TFYNavigationBar: UINavigationBar {
             setupAdditionalView(additionalView)
         }
     }
-    
+    /// 导航栏下面的线条
     open var shadow: NavigationShadow = .none {
         didSet { layer.apply(shadow) }
     }
@@ -100,11 +100,11 @@ open class TFYNavigationBar: UINavigationBar {
 
 // MARK: - override
 extension TFYNavigationBar {
-    
+    /// 隐藏导航栏
     open override var isHidden: Bool {
         didSet { viewController?.adjustsSafeAreaInsetsAfterIOS11() }
     }
-    
+    /// 是否透明度
     open override var isTranslucent: Bool {
         didSet {
             guard #available(iOS 13.0, *), !isTranslucent else { return }
@@ -113,7 +113,7 @@ extension TFYNavigationBar {
             updateAppearance(appearance)
         }
     }
-    
+    /// 导航栏透明度
     open override var alpha: CGFloat {
         get { return super.alpha }
         set {
@@ -126,7 +126,7 @@ extension TFYNavigationBar {
             }
         }
     }
-    
+    /// 背景颜色
     open override var barTintColor: UIColor? {
         didSet {
             guard #available(iOS 13.0, *) else { return }
@@ -136,12 +136,12 @@ extension TFYNavigationBar {
         }
     }
     
-    /// map to barTintColor
+    ///映射到barTintColor
     open override var backgroundColor: UIColor? {
         get { return super.backgroundColor }
         set { barTintColor = newValue }
     }
-    
+    /// 导航栏下面线条背景图片
     open override var shadowImage: UIImage? {
         didSet {
             guard #available(iOS 13.0, *) else { return }
@@ -150,7 +150,7 @@ extension TFYNavigationBar {
             updateAppearance(appearance)
         }
     }
-    
+    /// 设置标题副本
     open override var titleTextAttributes: [NSAttributedString.Key : Any]? {
         didSet {
             guard #available(iOS 13.0, *) else { return }
@@ -159,7 +159,7 @@ extension TFYNavigationBar {
             updateAppearance(appearance)
         }
     }
-    
+    /// 开启有大标题
     open override var prefersLargeTitles: Bool {
         get { return super.prefersLargeTitles }
         set {
@@ -174,7 +174,7 @@ extension TFYNavigationBar {
             updateAppearance(appearance)
         }
     }
-    
+    /// 开启有大标题 设置
     open override var largeTitleTextAttributes: [NSAttributedString.Key : Any]? {
         get { return super.largeTitleTextAttributes }
         set {
@@ -189,13 +189,13 @@ extension TFYNavigationBar {
             updateAppearance(appearance)
         }
     }
-    
+    /// 更改导航位置
     open override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         if super.point(inside: point, with: event) { return true }
         
         return additionalView?.frame.contains(point) ?? false
     }
-    
+    /// 背景图片
     open override func setBackgroundImage(
         _ backgroundImage: UIImage?,
         for barPosition: UIBarPosition,
