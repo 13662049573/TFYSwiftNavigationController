@@ -57,6 +57,7 @@ extension UINavigationController {
 public extension UINavigationController.Configuration {
     
     @available(iOS 11.0, *)
+
     /// 导航栏内容视图的填充。
     var layoutPaddings: UIEdgeInsets {
         get { _layoutPaddings }

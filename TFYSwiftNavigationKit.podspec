@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   
   spec.license      = "MIT"
   
-  spec.author             = { "田风有" => "420144542@qq.com" }
+  spec.author       = { "田风有" => "420144542@qq.com" }
   
   spec.platform     = :ios, "13.0"
 
@@ -27,19 +27,18 @@ Pod::Spec.new do |spec|
 
   
   spec.subspec 'Extension' do |ss|
-    ss.source_files  = "TFYSwiftNavigationKit/TFYSwiftNavigationKit/Extension/*.{swift}"
-    ss.dependency "TFYSwiftNavigationKit/Xcassets"
+    ss.source_files  = "TFYSwiftNavigationController/TFYSwiftNavigationKit/Extension/*.{swift}"
     ss.dependency "TFYSwiftNavigationKit/Base"
   end
-
+  
   spec.subspec 'Base' do |ss|
-    ss.source_files  = "TFYSwiftNavigationKit/TFYSwiftNavigationKit/Base/*.{swift}"
+    ss.source_files  = "TFYSwiftNavigationController/TFYSwiftNavigationKit/Base/*.{swift}"
   end
-  
-  spec.subspec 'Xcassets' do |ss|
-    ss.resource_bundles = { 'TFYNavigationBar' => ['TFYSwiftNavigationKit/TFYSwiftNavigationKit/*.xcassets'] }
-  end
-  
+
+  spec.resource_bundles = {
+       'TFYNavigationBar' => [ 'TFYSwiftNavigationController/TFYSwiftNavigationKit/Xcassets/*.xcassets']
+  }
+
   spec.requires_arc = true
 
 end

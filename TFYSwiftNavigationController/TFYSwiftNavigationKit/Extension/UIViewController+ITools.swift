@@ -138,8 +138,9 @@ extension UIViewController {
 private extension UIViewController {
     
     func buildBackBarButtonItem(_ viewControllers: [UIViewController]) -> TFYBarButtonItem {
+
 //        let count = viewControllers.count
-        
+
         let backButton = UIButton(type: .system)
         let image = UIImage(named: "navigation_back_default", in: Bundle.current, compatibleWith: nil)
         backButton.setImage(image, for: .normal)
@@ -157,6 +158,7 @@ private extension UIViewController {
 ////            backButton.setTitle("Back", for: .normal)
 //        }
 //        backButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+
         backButton.contentEdgeInsets = .init(top: 0, left: -8, bottom: 0, right: 8)
         backButton.sizeToFit()
     

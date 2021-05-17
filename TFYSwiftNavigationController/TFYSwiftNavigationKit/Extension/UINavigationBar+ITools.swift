@@ -8,17 +8,20 @@
 import UIKit
 
 public extension UINavigationBar {
+
     /// 标题透明度
     func setTitleAlpha(_ alpha: CGFloat) {
         let color = titleTextAttributes?[.foregroundColor] as? UIColor ?? defaultTitleColor
         setTitleColor(color.withAlphaComponent(alpha))
     }
+
     /// 开启最大标题的时候，字体透明度
     @available(iOS 11.0, *)
     func setLargeTitleAlpha(_ alpha: CGFloat) {
         let color = largeTitleTextAttributes?[.foregroundColor] as? UIColor ?? defaultTitleColor
         setLargeTitleColor(color.withAlphaComponent(alpha))
     }
+
     /// 标题颜色透明度
     func setTintAlpha(_ alpha: CGFloat) {
         tintColor = tintColor.withAlphaComponent(alpha)

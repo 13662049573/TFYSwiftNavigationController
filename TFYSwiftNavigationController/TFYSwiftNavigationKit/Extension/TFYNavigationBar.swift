@@ -8,11 +8,9 @@
 import UIKit
 
 open class TFYNavigationBar: UINavigationBar {
-    
-    /// 自动调整位置时，视图布局
+
     open var automaticallyAdjustsPosition: Bool = true
-    
-    /// 更改导航栏高度
+
     open var additionalHeight: CGFloat = 0 {
         didSet {
             frame.size.height = barHeight + _additionalHeight
@@ -27,6 +25,7 @@ open class TFYNavigationBar: UINavigationBar {
             background.clipsToBounds = isShadowHidden
         }
     }
+
     /// 状态栏颜色
     open var statusBarStyle: UIStatusBarStyle = .default {
         didSet {
@@ -61,6 +60,7 @@ open class TFYNavigationBar: UINavigationBar {
             setupAdditionalView(additionalView)
         }
     }
+
     /// 导航栏下面的线条
     open var shadow: NavigationShadow = .none {
         didSet { layer.apply(shadow) }
@@ -100,6 +100,7 @@ open class TFYNavigationBar: UINavigationBar {
 
 // MARK: - override
 extension TFYNavigationBar {
+
     /// 隐藏导航栏
     open override var isHidden: Bool {
         didSet { viewController?.adjustsSafeAreaInsetsAfterIOS11() }
@@ -113,6 +114,7 @@ extension TFYNavigationBar {
             updateAppearance(appearance)
         }
     }
+
     /// 导航栏透明度
     open override var alpha: CGFloat {
         get { return super.alpha }
@@ -126,6 +128,7 @@ extension TFYNavigationBar {
             }
         }
     }
+
     /// 背景颜色
     open override var barTintColor: UIColor? {
         didSet {
@@ -136,11 +139,13 @@ extension TFYNavigationBar {
         }
     }
     
+
     ///映射到barTintColor
     open override var backgroundColor: UIColor? {
         get { return super.backgroundColor }
         set { barTintColor = newValue }
     }
+
     /// 导航栏下面线条背景图片
     open override var shadowImage: UIImage? {
         didSet {
@@ -150,6 +155,7 @@ extension TFYNavigationBar {
             updateAppearance(appearance)
         }
     }
+
     /// 设置标题副本
     open override var titleTextAttributes: [NSAttributedString.Key : Any]? {
         didSet {
@@ -159,6 +165,7 @@ extension TFYNavigationBar {
             updateAppearance(appearance)
         }
     }
+
     /// 开启有大标题
     open override var prefersLargeTitles: Bool {
         get { return super.prefersLargeTitles }
@@ -174,6 +181,7 @@ extension TFYNavigationBar {
             updateAppearance(appearance)
         }
     }
+
     /// 开启有大标题 设置
     open override var largeTitleTextAttributes: [NSAttributedString.Key : Any]? {
         get { return super.largeTitleTextAttributes }
@@ -189,12 +197,14 @@ extension TFYNavigationBar {
             updateAppearance(appearance)
         }
     }
+
     /// 更改导航位置
     open override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         if super.point(inside: point, with: event) { return true }
         
         return additionalView?.frame.contains(point) ?? false
     }
+
     /// 背景图片
     open override func setBackgroundImage(
         _ backgroundImage: UIImage?,
