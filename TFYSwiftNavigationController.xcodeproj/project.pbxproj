@@ -29,7 +29,7 @@
 		3651961A264F8BAB00177C71 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519607264F8BAB00177C71 /* TableViewController.swift */; };
 		3651961B264F8BAB00177C71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519609264F8BAB00177C71 /* AppDelegate.swift */; };
 		3651961C264F8BAB00177C71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651960A264F8BAB00177C71 /* SceneDelegate.swift */; };
-		367264CA2651F70500049CEF /* TFYNavigationBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 367264C92651F70500049CEF /* TFYNavigationBar.xcassets */; };
+		367264CD2652370A00049CEF /* TFYNavigationBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 367264CC2652370A00049CEF /* TFYNavigationBar.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,7 @@
 		36519607264F8BAB00177C71 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		36519609264F8BAB00177C71 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3651960A264F8BAB00177C71 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		367264C92651F70500049CEF /* TFYNavigationBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TFYNavigationBar.xcassets; sourceTree = "<group>"; };
+		367264CC2652370A00049CEF /* TFYNavigationBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TFYNavigationBar.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +161,7 @@
 		365195F3264F8BAB00177C71 /* TFYSwiftNavigationKit */ = {
 			isa = PBXGroup;
 			children = (
-				367264C92651F70500049CEF /* TFYNavigationBar.xcassets */,
+				367264CB2652370A00049CEF /* Xcassets */,
 				365195F6264F8BAB00177C71 /* Extension */,
 				365195FE264F8BAB00177C71 /* Base */,
 			);
@@ -211,6 +211,14 @@
 				3651960A264F8BAB00177C71 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		367264CB2652370A00049CEF /* Xcassets */ = {
+			isa = PBXGroup;
+			children = (
+				367264CC2652370A00049CEF /* TFYNavigationBar.xcassets */,
+			);
+			path = Xcassets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +328,7 @@
 				36519617264F8BAB00177C71 /* MainViewController.xib in Resources */,
 				365195CD264F8B5C00177C71 /* Assets.xcassets in Resources */,
 				365195CB264F8B5B00177C71 /* Main.storyboard in Resources */,
-				367264CA2651F70500049CEF /* TFYNavigationBar.xcassets in Resources */,
+				367264CD2652370A00049CEF /* TFYNavigationBar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
