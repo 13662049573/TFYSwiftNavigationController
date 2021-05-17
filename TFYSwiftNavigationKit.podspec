@@ -27,12 +27,12 @@ Pod::Spec.new do |spec|
 
   
   spec.subspec 'Extension' do |ss|
-    ss.source_files  = "TFYSwiftNavigationKit/TFYSwiftNavigationKit/Extension/*.{swift}"
+    ss.source_files  = "TFYSwiftNavigationController/TFYSwiftNavigationKit/Extension/*.{swift}"
     ss.dependency "TFYSwiftNavigationKit/Base"
   end
 
   spec.subspec 'Base' do |ss|
-    ss.source_files  = "TFYSwiftNavigationKit/TFYSwiftNavigationKit/Base/*.{swift}"
+    ss.source_files  = "TFYSwiftNavigationController/TFYSwiftNavigationKit/Base/*.{swift}"
   end
   
   spec.resource_bundles = { 'TFYNavigationBar' => ['TFYSwiftNavigationKit/TFYSwiftNavigationKit/*.xcassets'] }
