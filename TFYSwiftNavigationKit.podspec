@@ -37,7 +37,7 @@ Pod::Spec.new do |spec|
   
   spec.resource_bundles = {
        'TFYNavigationBar' => [
-       'TFYSwiftNavigationKit/TFYNavigationBar/*.xcassets'
+       'TFYSwiftNavigationController/TFYSwiftNavigationKit/TFYNavigationBar.xcassets'
        ]
   }
 
