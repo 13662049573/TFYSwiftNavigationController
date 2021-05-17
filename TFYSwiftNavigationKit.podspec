@@ -30,17 +30,15 @@ Pod::Spec.new do |spec|
     ss.source_files  = "TFYSwiftNavigationController/TFYSwiftNavigationKit/Extension/*.{swift}"
     ss.dependency "TFYSwiftNavigationKit/Base"
   end
-
+  
   spec.subspec 'Base' do |ss|
     ss.source_files  = "TFYSwiftNavigationController/TFYSwiftNavigationKit/Base/*.{swift}"
   end
   
   # spec.resource = ['TFYSwiftNavigationController/TFYSwiftNavigationKit/TFYNavigationBar.xcassets']
-
+  
   spec.resource_bundles = {
-       'TFYNavigationBar' => [
-       'TFYSwiftNavigationKit/TFYNavigationBar.xcassets'
-       ]
+       'TFYNavigationBar' => [ 'TFYSwiftNavigationKit/Xcassets/*.xcassets']
   }
 
 
