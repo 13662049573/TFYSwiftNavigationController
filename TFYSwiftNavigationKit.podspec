@@ -28,7 +28,6 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'Extension' do |ss|
     ss.source_files  = "TFYSwiftNavigationKit/TFYSwiftNavigationKit/Extension/*.{swift}"
-    ss.dependency "TFYSwiftNavigationKit/Xcassets"
     ss.dependency "TFYSwiftNavigationKit/Base"
   end
 
@@ -36,9 +35,7 @@ Pod::Spec.new do |spec|
     ss.source_files  = "TFYSwiftNavigationKit/TFYSwiftNavigationKit/Base/*.{swift}"
   end
   
-  spec.subspec 'Xcassets' do |ss|
-    ss.resource_bundles = { 'TFYNavigationBar' => ['TFYSwiftNavigationKit/TFYSwiftNavigationKit/*.xcassets'] }
-  end
+  spec.resource_bundles = { 'TFYNavigationBar' => ['TFYSwiftNavigationKit/TFYSwiftNavigationKit/*.xcassets'] }
   
   spec.requires_arc = true
 
