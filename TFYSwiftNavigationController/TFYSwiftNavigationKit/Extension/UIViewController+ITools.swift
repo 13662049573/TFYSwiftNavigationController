@@ -139,25 +139,9 @@ private extension UIViewController {
     
     func buildBackBarButtonItem(_ viewControllers: [UIViewController]) -> TFYBarButtonItem {
 
-//        let count = viewControllers.count
-
         let backButton = UIButton(type: .system)
         let image = UIImage(named: "navigation_back_default", in: Bundle.current, compatibleWith: nil)
         backButton.setImage(image, for: .normal)
-        
-//        if let title = viewControllers[count - 2]._navigationItem.title {
-//            let maxWidth = min(UIScreen.main.bounds.width, UIScreen.main.bounds.height) / 3
-//            let width = (title as NSString).boundingRect(
-//                with: CGSize(width: maxWidth, height: 20),
-//                options: NSStringDrawingOptions.usesFontLeading,
-//                attributes: [.font: UIFont.boldSystemFont(ofSize: 17)],
-//                context: nil
-//            ).size.width
-////            backButton.setTitle(width < maxWidth ? title : "Back", for: .normal)
-//        } else {
-////            backButton.setTitle("Back", for: .normal)
-//        }
-//        backButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
 
         backButton.contentEdgeInsets = .init(top: 0, left: -8, bottom: 0, right: 8)
         backButton.sizeToFit()

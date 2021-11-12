@@ -20,8 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let nav = UINavigationController(rootViewController: MainViewController())
 
             nav.navigation.configuration.isEnabled = true
-            nav.navigation.configuration.barTintColor = UIColor.green
-            nav.navigation.configuration.tintColor = UIColor.white
+            nav.navigation.configuration.barTintColor = UIColor.blue
+            nav.navigation.configuration.tintColor = UIColor.red
             
             if #available(iOS 11.0, *) {
                 nav.navigation.configuration.prefersLargeTitles = true

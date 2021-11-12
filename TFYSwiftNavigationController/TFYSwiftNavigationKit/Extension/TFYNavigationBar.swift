@@ -66,14 +66,26 @@ open class TFYNavigationBar: UINavigationBar {
         didSet { layer.apply(shadow) }
     }
     
-    @available(iOS 13.0, *)
     private lazy var appearance: UINavigationBarAppearance = {
         let appearance = UINavigationBarAppearance()
         
-        appearance.backgroundColor = self.barTintColor
-        appearance.titleTextAttributes = self.titleTextAttributes ?? [:]
-        appearance.largeTitleTextAttributes = self.largeTitleTextAttributes ?? [:]
-        
+        if #available(iOS 15, *) {
+            
+            appearance.configureWithOpaqueBackground()
+            appearance.titleTextAttributes =  self.titleTextAttributes ?? [:]
+            appearance.backgroundColor = self.barTintColor
+            appearance.largeTitleTextAttributes = self.largeTitleTextAttributes ?? [:]
+            
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            
+        } else {
+            
+            appearance.backgroundColor = self.barTintColor
+            appearance.titleTextAttributes = self.titleTextAttributes ?? [:]
+            appearance.largeTitleTextAttributes = self.largeTitleTextAttributes ?? [:]
+            
+        }
         return appearance
     }()
     
