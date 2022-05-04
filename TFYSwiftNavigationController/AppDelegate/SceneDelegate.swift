@@ -11,32 +11,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             
-            let nav = UINavigationController(rootViewController: MainViewController())
+            let navigationBar = UINavigationBar.appearance()
+            navigationBar.barTintColor = .red
+            navigationBar.tintColor = .white
+            navigationBar.barStyle = .black
+            navigationBar.titleTextAttributes = [
+                NSAttributedString.Key.foregroundColor: UIColor.white,
+                NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17)
+            ]
 
-            nav.navigation.configuration.isEnabled = true
-            nav.navigation.configuration.barTintColor = UIColor.blue
-            nav.navigation.configuration.tintColor = UIColor.red
-            
-            if #available(iOS 11.0, *) {
-                nav.navigation.configuration.prefersLargeTitles = true
-                nav.navigation.configuration.largeTitle.displayMode = .never
-            }
-            
-            let shadow = NavigationShadow(
-                color: UIColor.black.cgColor,
-                opacity: 0.5,
-                offset: CGSize(width: 0, height: 3)
-            )
-            nav.navigation.configuration.shadow = shadow
-            
-            window.rootViewController = nav
-            self.window = window
             window.makeKeyAndVisible()
         }
         guard let _ = (scene as? UIWindowScene) else { return }

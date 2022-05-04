@@ -12,24 +12,14 @@
 		365195D0264F8B5C00177C71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365195CE264F8B5C00177C71 /* LaunchScreen.storyboard */; };
 		365195DB264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195DA264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift */; };
 		365195E6264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195E5264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift */; };
-		3651960C264F8BAB00177C71 /* UINavigationBar+ITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195F7264F8BAB00177C71 /* UINavigationBar+ITools.swift */; };
-		3651960D264F8BAB00177C71 /* UITableViewController+ITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195F8264F8BAB00177C71 /* UITableViewController+ITools.swift */; };
-		3651960E264F8BAB00177C71 /* UIViewController+ITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195F9264F8BAB00177C71 /* UIViewController+ITools.swift */; };
-		3651960F264F8BAB00177C71 /* TFYNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195FA264F8BAB00177C71 /* TFYNavigationBar.swift */; };
-		36519610264F8BAB00177C71 /* UINavigationController+ITools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195FB264F8BAB00177C71 /* UINavigationController+ITools.swift */; };
-		36519611264F8BAB00177C71 /* TFYConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195FC264F8BAB00177C71 /* TFYConfiguration.swift */; };
-		36519612264F8BAB00177C71 /* TFYBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195FD264F8BAB00177C71 /* TFYBarButtonItem.swift */; };
-		36519613264F8BAB00177C71 /* NavigationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195FF264F8BAB00177C71 /* NavigationBase.swift */; };
-		36519614264F8BAB00177C71 /* TFYNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519600264F8BAB00177C71 /* TFYNavigationItem.swift */; };
-		36519615264F8BAB00177C71 /* TFYAssociatedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519601264F8BAB00177C71 /* TFYAssociatedKeys.swift */; };
-		36519616264F8BAB00177C71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519603264F8BAB00177C71 /* ViewController.swift */; };
-		36519617264F8BAB00177C71 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36519604264F8BAB00177C71 /* MainViewController.xib */; };
-		36519618264F8BAB00177C71 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519605264F8BAB00177C71 /* NextViewController.swift */; };
-		36519619264F8BAB00177C71 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519606264F8BAB00177C71 /* MainViewController.swift */; };
-		3651961A264F8BAB00177C71 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519607264F8BAB00177C71 /* TableViewController.swift */; };
 		3651961B264F8BAB00177C71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519609264F8BAB00177C71 /* AppDelegate.swift */; };
 		3651961C264F8BAB00177C71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651960A264F8BAB00177C71 /* SceneDelegate.swift */; };
-		367264CD2652370A00049CEF /* TFYNavigationBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 367264CC2652370A00049CEF /* TFYNavigationBar.xcassets */; };
+		3666A58E28221B020054F22E /* UIViewControllerr+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A58D28221B020054F22E /* UIViewControllerr+NavigationBar.swift */; };
+		3666A59028221BF50054F22E /* TFYSwiftNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A58F28221BF50054F22E /* TFYSwiftNavigationController.swift */; };
+		3666A59228221C1B0054F22E /* TFYSwiftFakeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A59128221C1B0054F22E /* TFYSwiftFakeNavigationBar.swift */; };
+		3666A59628221D8A0054F22E /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A59328221D890054F22E /* DemoViewController.swift */; };
+		3666A59728221D8A0054F22E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A59428221D890054F22E /* ProfileViewController.swift */; };
+		3666A59828221D8A0054F22E /* BarHiddenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A59528221D890054F22E /* BarHiddenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,24 +51,14 @@
 		365195E1264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFYSwiftNavigationControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		365195E5264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftNavigationControllerUITests.swift; sourceTree = "<group>"; };
 		365195E7264F8B5C00177C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		365195F7264F8BAB00177C71 /* UINavigationBar+ITools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+ITools.swift"; sourceTree = "<group>"; };
-		365195F8264F8BAB00177C71 /* UITableViewController+ITools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+ITools.swift"; sourceTree = "<group>"; };
-		365195F9264F8BAB00177C71 /* UIViewController+ITools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ITools.swift"; sourceTree = "<group>"; };
-		365195FA264F8BAB00177C71 /* TFYNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFYNavigationBar.swift; sourceTree = "<group>"; };
-		365195FB264F8BAB00177C71 /* UINavigationController+ITools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ITools.swift"; sourceTree = "<group>"; };
-		365195FC264F8BAB00177C71 /* TFYConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFYConfiguration.swift; sourceTree = "<group>"; };
-		365195FD264F8BAB00177C71 /* TFYBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFYBarButtonItem.swift; sourceTree = "<group>"; };
-		365195FF264F8BAB00177C71 /* NavigationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBase.swift; sourceTree = "<group>"; };
-		36519600264F8BAB00177C71 /* TFYNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFYNavigationItem.swift; sourceTree = "<group>"; };
-		36519601264F8BAB00177C71 /* TFYAssociatedKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFYAssociatedKeys.swift; sourceTree = "<group>"; };
-		36519603264F8BAB00177C71 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		36519604264F8BAB00177C71 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		36519605264F8BAB00177C71 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
-		36519606264F8BAB00177C71 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		36519607264F8BAB00177C71 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		36519609264F8BAB00177C71 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3651960A264F8BAB00177C71 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		367264CC2652370A00049CEF /* TFYNavigationBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TFYNavigationBar.xcassets; sourceTree = "<group>"; };
+		3666A58D28221B020054F22E /* UIViewControllerr+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewControllerr+NavigationBar.swift"; sourceTree = "<group>"; };
+		3666A58F28221BF50054F22E /* TFYSwiftNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftNavigationController.swift; sourceTree = "<group>"; };
+		3666A59128221C1B0054F22E /* TFYSwiftFakeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftFakeNavigationBar.swift; sourceTree = "<group>"; };
+		3666A59328221D890054F22E /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		3666A59428221D890054F22E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3666A59528221D890054F22E /* BarHiddenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarHiddenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,45 +141,19 @@
 		365195F3264F8BAB00177C71 /* TFYSwiftNavigationKit */ = {
 			isa = PBXGroup;
 			children = (
-				367264CB2652370A00049CEF /* Xcassets */,
-				365195F6264F8BAB00177C71 /* Extension */,
-				365195FE264F8BAB00177C71 /* Base */,
+				3666A58D28221B020054F22E /* UIViewControllerr+NavigationBar.swift */,
+				3666A58F28221BF50054F22E /* TFYSwiftNavigationController.swift */,
+				3666A59128221C1B0054F22E /* TFYSwiftFakeNavigationBar.swift */,
 			);
 			path = TFYSwiftNavigationKit;
-			sourceTree = "<group>";
-		};
-		365195F6264F8BAB00177C71 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				365195F7264F8BAB00177C71 /* UINavigationBar+ITools.swift */,
-				365195F8264F8BAB00177C71 /* UITableViewController+ITools.swift */,
-				365195F9264F8BAB00177C71 /* UIViewController+ITools.swift */,
-				365195FA264F8BAB00177C71 /* TFYNavigationBar.swift */,
-				365195FB264F8BAB00177C71 /* UINavigationController+ITools.swift */,
-				365195FC264F8BAB00177C71 /* TFYConfiguration.swift */,
-				365195FD264F8BAB00177C71 /* TFYBarButtonItem.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		365195FE264F8BAB00177C71 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				365195FF264F8BAB00177C71 /* NavigationBase.swift */,
-				36519600264F8BAB00177C71 /* TFYNavigationItem.swift */,
-				36519601264F8BAB00177C71 /* TFYAssociatedKeys.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		36519602264F8BAB00177C71 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				36519603264F8BAB00177C71 /* ViewController.swift */,
-				36519604264F8BAB00177C71 /* MainViewController.xib */,
-				36519605264F8BAB00177C71 /* NextViewController.swift */,
-				36519606264F8BAB00177C71 /* MainViewController.swift */,
-				36519607264F8BAB00177C71 /* TableViewController.swift */,
+				3666A59528221D890054F22E /* BarHiddenViewController.swift */,
+				3666A59328221D890054F22E /* DemoViewController.swift */,
+				3666A59428221D890054F22E /* ProfileViewController.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -211,14 +165,6 @@
 				3651960A264F8BAB00177C71 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		367264CB2652370A00049CEF /* Xcassets */ = {
-			isa = PBXGroup;
-			children = (
-				367264CC2652370A00049CEF /* TFYNavigationBar.xcassets */,
-			);
-			path = Xcassets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,10 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				365195D0264F8B5C00177C71 /* LaunchScreen.storyboard in Resources */,
-				36519617264F8BAB00177C71 /* MainViewController.xib in Resources */,
 				365195CD264F8B5C00177C71 /* Assets.xcassets in Resources */,
 				365195CB264F8B5B00177C71 /* Main.storyboard in Resources */,
-				367264CD2652370A00049CEF /* TFYNavigationBar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,22 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36519614264F8BAB00177C71 /* TFYNavigationItem.swift in Sources */,
-				3651960F264F8BAB00177C71 /* TFYNavigationBar.swift in Sources */,
-				3651961A264F8BAB00177C71 /* TableViewController.swift in Sources */,
-				3651960D264F8BAB00177C71 /* UITableViewController+ITools.swift in Sources */,
-				36519616264F8BAB00177C71 /* ViewController.swift in Sources */,
-				3651960E264F8BAB00177C71 /* UIViewController+ITools.swift in Sources */,
-				36519612264F8BAB00177C71 /* TFYBarButtonItem.swift in Sources */,
-				36519619264F8BAB00177C71 /* MainViewController.swift in Sources */,
-				36519610264F8BAB00177C71 /* UINavigationController+ITools.swift in Sources */,
-				36519611264F8BAB00177C71 /* TFYConfiguration.swift in Sources */,
 				3651961B264F8BAB00177C71 /* AppDelegate.swift in Sources */,
-				36519618264F8BAB00177C71 /* NextViewController.swift in Sources */,
-				36519615264F8BAB00177C71 /* TFYAssociatedKeys.swift in Sources */,
+				3666A59228221C1B0054F22E /* TFYSwiftFakeNavigationBar.swift in Sources */,
 				3651961C264F8BAB00177C71 /* SceneDelegate.swift in Sources */,
-				3651960C264F8BAB00177C71 /* UINavigationBar+ITools.swift in Sources */,
-				36519613264F8BAB00177C71 /* NavigationBase.swift in Sources */,
+				3666A59628221D8A0054F22E /* DemoViewController.swift in Sources */,
+				3666A59028221BF50054F22E /* TFYSwiftNavigationController.swift in Sources */,
+				3666A59728221D8A0054F22E /* ProfileViewController.swift in Sources */,
+				3666A58E28221B020054F22E /* UIViewControllerr+NavigationBar.swift in Sources */,
+				3666A59828221D8A0054F22E /* BarHiddenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
