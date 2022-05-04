@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFYSwiftNavigationKit"
 
-  spec.version      = "2.0.4"
+  spec.version      = "2.0.6"
 
   spec.summary      = "Swift版的 导航栏设置，基本需求都可以满足，最新支持 iOS 13 -- Swift 5 "
 
@@ -25,19 +25,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/13662049573/TFYSwiftNavigationController.git", :tag => spec.version }
 
-  
-  spec.subspec 'Extension' do |ss|
-    ss.source_files  = "TFYSwiftNavigationController/TFYSwiftNavigationKit/Extension/*.{swift}"
-    ss.dependency "TFYSwiftNavigationKit/Base"
-  end
-  
-  spec.subspec 'Base' do |ss|
-    ss.source_files  = "TFYSwiftNavigationController/TFYSwiftNavigationKit/Base/*.{swift}"
-  end
-
-  spec.resource_bundles = {
-       'TFYNavigationBar' => [ 'TFYSwiftNavigationController/TFYSwiftNavigationKit/Xcassets/*.xcassets']
-  }
+  spec.source_files  = "TFYSwiftNavigationController/TFYSwiftNavigationKit/*.{swift}"
 
   spec.requires_arc = true
 
