@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 // MARK: -  自定义导航栏相关的属性, 支持UINavigationBar.appearance()
-extension UIViewController {
+public extension UIViewController {
     
     // MARK: -  属性
     /// keys

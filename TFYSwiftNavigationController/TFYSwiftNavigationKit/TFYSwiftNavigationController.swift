@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TFYSwiftNavigationController: UINavigationController {
+public class TFYSwiftNavigationController: UINavigationController {
 
     // MARK: -  属性
     private lazy var fakeBar: TFYSwiftFakeNavigationBar = {
@@ -36,7 +36,7 @@ class TFYSwiftNavigationController: UINavigationController {
 
     // MARK: -  override
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
         interactivePopGestureRecognizer?.delegate = self
@@ -44,7 +44,7 @@ class TFYSwiftNavigationController: UINavigationController {
         setupNavigationBar()
     }
     
-    override func viewWillLayoutSubviews() {
+    public override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         if let coordinator = transitionCoordinator {
             guard let fromVC = coordinator.viewController(forKey: .from) else { return }
@@ -57,12 +57,12 @@ class TFYSwiftNavigationController: UINavigationController {
         }
     }
     
-    override func viewDidLayoutSubviews() {
+    public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         layoutFakeSubviews()
     }
     
-    override func popViewController(animated: Bool) -> UIViewController? {
+    public override func popViewController(animated: Bool) -> UIViewController? {
         poppingVC = topViewController
         let viewController = super.popViewController(animated: animated)
         if let topViewController = topViewController {
@@ -71,7 +71,7 @@ class TFYSwiftNavigationController: UINavigationController {
         return viewController
     }
 
-    override func popToRootViewController(animated: Bool) -> [UIViewController]? {
+    public override func popToRootViewController(animated: Bool) -> [UIViewController]? {
         poppingVC = topViewController
         let vcArray = super.popToRootViewController(animated: animated)
         if let topViewController = topViewController {
@@ -80,7 +80,7 @@ class TFYSwiftNavigationController: UINavigationController {
         return vcArray
     }
 
-    override func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]? {
+    public override func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]? {
         poppingVC = topViewController
         let vcArray = super.popToViewController(viewController, animated: animated)
         if let topViewController = topViewController {
@@ -223,7 +223,7 @@ extension TFYSwiftNavigationController {
 // MARK: -  UINavigationControllerDelegate
 extension TFYSwiftNavigationController: UINavigationControllerDelegate {
  
-    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+    public func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         if let coordinator = transitionCoordinator {
             showViewController(viewController, coordinator: coordinator)
         } else {
@@ -236,7 +236,7 @@ extension TFYSwiftNavigationController: UINavigationControllerDelegate {
         }
     }
     
-    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         if !animated {
             tfy_updateNavigationBar(for: viewController)
             clearTempFakeBar()
@@ -249,7 +249,7 @@ extension TFYSwiftNavigationController: UINavigationControllerDelegate {
 // MARK: -  UIGestureRecognizerDelegate
 extension TFYSwiftNavigationController: UIGestureRecognizerDelegate {
     
-    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if viewControllers.count <= 1 {
             return false
         }
