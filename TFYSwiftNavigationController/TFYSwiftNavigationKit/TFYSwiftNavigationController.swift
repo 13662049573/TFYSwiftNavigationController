@@ -89,6 +89,18 @@ public class TFYSwiftNavigationController: UINavigationController {
         return vcArray
     }
     
+    public override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        poppingVC = topViewController
+        if viewControllers.count >= 1 {
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        let vcArr: Void = super.pushViewController(viewController, animated: animated)
+        if let topViewController = topViewController {
+            tfy_updateNavigationBarTint(for: topViewController, ignoreTintColor: true)
+        }
+        return vcArr
+    }
+    
 }
 
 // MARK: -  Private Methods
