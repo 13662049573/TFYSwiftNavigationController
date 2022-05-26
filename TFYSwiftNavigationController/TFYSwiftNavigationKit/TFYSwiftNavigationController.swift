@@ -109,6 +109,7 @@ extension TFYSwiftNavigationController {
     private func setupNavigationBar() {
         navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationBar.shadowImage = UIImage()
+        navigationBar.isTranslucent = false
         setupFakeSubviews()
     }
     
