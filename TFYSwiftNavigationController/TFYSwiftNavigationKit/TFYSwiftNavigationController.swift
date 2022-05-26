@@ -298,6 +298,9 @@ extension TFYSwiftNavigationController {
         if !ignoreTintColor {
             navigationBar.tintColor = viewController.tfy_tintColor
         }
+        if #available(iOS 14.0, *) {
+            navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", image: UIImage(), primaryAction: nil, menu: nil)
+        }
         UIView.setAnimationsEnabled(true)
     }
     
