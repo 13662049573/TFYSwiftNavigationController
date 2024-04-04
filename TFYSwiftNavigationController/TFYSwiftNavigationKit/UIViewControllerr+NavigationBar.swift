@@ -14,16 +14,16 @@ public extension UIViewController {
     // MARK: -  属性
     /// keys
     private struct TFYSwiftNavigationBarKeys {
-        static var barStyle = "TFYSwiftNavigationBarKeys_barStyle"
-        static var backgroundColor = "TFYSwiftNavigationBarKeys_backgroundColor"
-        static var backgroundImage = "TFYSwiftNavigationBarKeys_backgroundImage"
-        static var tintColor = "TFYSwiftNavigationBarKeys_tintColor"
-        static var barAlpha = "TFYSwiftNavigationBarKeys_barAlpha"
-        static var titleColor = "TFYSwiftNavigationBarKeys_titleColor"
-        static var titleFont = "TFYSwiftNavigationBarKeys_titleFont"
-        static var shadowHidden = "TFYSwiftNavigationBarKeys_shadowHidden"
-        static var shadowColor = "TFYSwiftNavigationBarKeys_shadowColor"
-        static var enablePopGesture = "TFYSwiftNavigationBarKeys_enablePopGesture"
+        static var barStyle:UInt8 = 100
+        static var backgroundColor:UInt8 = 101
+        static var backgroundImage:UInt8 = 102
+        static var tintColor:UInt8 = 103
+        static var barAlpha:UInt8 = 104
+        static var titleColor:UInt8 = 105
+        static var titleFont:UInt8 = 106
+        static var shadowHidden:UInt8 = 107
+        static var shadowColor:UInt8 = 108
+        static var enablePopGesture:UInt8 = 109
     }
 
     /// 导航栏样式，默认样式
