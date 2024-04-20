@@ -20,6 +20,7 @@ fileprivate var titleFontKey: Void?
 fileprivate var shadowHiddenKey: Void?
 fileprivate var shadowColorKey: Void?
 fileprivate var enablePopGestureKey: Void?
+fileprivate var transparentKey: Void?
 
 public extension UIViewController {
     
@@ -123,6 +124,9 @@ public extension UIViewController {
         set {
             objc_setAssociatedObject(self, &barAlphaKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
             tfy_setNeedsNavigationBarBackgroundUpdate()
+            if newValue == 0 {
+                self.navigationController?.navigationBar.isTranslucent = true
+            }
         }
     }
 

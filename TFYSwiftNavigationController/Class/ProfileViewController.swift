@@ -22,6 +22,7 @@ class ProfileViewController: UITableViewController {
         let headerFrame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.width * 0.75)
         header.frame = headerFrame
         headerView.frame = headerFrame
+        headerView.image = UIImage(named: "back_5")
         tfy_backgroundColor = .cyan
         tfy_barAlpha = 0
         tfy_tintColor = .white
