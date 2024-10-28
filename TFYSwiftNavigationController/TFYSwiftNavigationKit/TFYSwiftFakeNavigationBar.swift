@@ -50,6 +50,7 @@ class TFYSwiftFakeNavigationBar: UIView {
         addSubview(fakeBackgroundEffectView)
         addSubview(fakeBackgroundImageView)
         addSubview(fakeShadowImageView)
+        effectBackdropView()
     }
     
     override func layoutSubviews() {
@@ -57,8 +58,23 @@ class TFYSwiftFakeNavigationBar: UIView {
         fakeBackgroundEffectView.frame = bounds
         fakeBackgroundImageView.frame = bounds
         fakeShadowImageView.frame = CGRect(x: 0, y: bounds.height - 0.5, width: bounds.width, height: 0.5)
+        effectBackdropView()
     }
     
+    private func effectBackdropView() {
+        let viewbacks:[UIView] = subviews
+        viewbacks.forEach { view in
+            if view.isKind(of:NSClassFromString("UIVisualEffectView")!) {
+                let effectViews:[UIView] = view.subviews
+                effectViews.forEach { effView in
+                    if effView.isKind(of: NSClassFromString("_UIVisualEffectBackdropView")!) {
+                        effView.removeFromSuperview()
+                    }
+                }
+            }
+            
+        }
+    }
     // MARK: -  public
     
     func tfy_updateFakeBarBackground(for viewController: UIViewController) {

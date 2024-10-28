@@ -111,6 +111,7 @@ extension TFYSwiftNavigationController {
         navigationBar.shadowImage = UIImage()
         navigationBar.isTranslucent = false
         setupFakeSubviews()
+        removedimmingView()
     }
     
     private func setupFakeSubviews() {
@@ -128,6 +129,28 @@ extension TFYSwiftNavigationController {
         guard let fakeSuperView = fakeSuperView else { return }
         fakeBar.frame = fakeSuperView.bounds
         fakeBar.setNeedsLayout()
+        removedimmingView()
+    }
+    
+    private func removedimmingView() {
+        let viewsArr:[UIView] = view.subviews
+        viewsArr.forEach { view in
+            if view.isKind(of: NSClassFromString("UINavigationTransitionView")!) {
+                let views:[UIView] = view.subviews
+                views.forEach { subView in
+                    if subView.isKind(of: NSClassFromString("UIViewControllerWrapperView")!) {
+                        let perViews:[UIView] = subView.subviews
+                        perViews.forEach { perView in
+                            if perView.isKind(of: NSClassFromString("_UIParallaxDimmingView")!) {
+                                perView.backgroundColor = .clear
+                                perView.removeFromSuperview()
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
     }
     
     @objc private func handleinteractivePopGesture(gesture: UIScreenEdgePanGestureRecognizer) {
