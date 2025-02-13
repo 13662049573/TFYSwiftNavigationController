@@ -19,6 +19,13 @@
 		3D68BAE92D5DCB2F00A244A7 /* TFYSwiftFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BAE82D5DCB2F00A244A7 /* TFYSwiftFourViewController.swift */; };
 		3D68BB192D5DE9A100A244A7 /* TFYSwiftNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB182D5DE9A100A244A7 /* TFYSwiftNavigationBar.swift */; };
 		3D68BB1B2D5DEA7C00A244A7 /* TFYSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB1A2D5DEA7C00A244A7 /* TFYSwiftUIViewController.swift */; };
+		3D68BB1D2D5DF31900A244A7 /* TFYSwiftFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB1C2D5DF31900A244A7 /* TFYSwiftFiveViewController.swift */; };
+		3D68BB1F2D5DF32700A244A7 /* TFYSwiftSexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB1E2D5DF32700A244A7 /* TFYSwiftSexViewController.swift */; };
+		3D68BB212D5DF35600A244A7 /* TFYSwiftSevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB202D5DF35600A244A7 /* TFYSwiftSevenViewController.swift */; };
+		3D68BB232D5DF36B00A244A7 /* TFYSwiftEightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB222D5DF36B00A244A7 /* TFYSwiftEightViewController.swift */; };
+		3D68BB252D5DF38400A244A7 /* TFYSwiftNineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB242D5DF38400A244A7 /* TFYSwiftNineViewController.swift */; };
+		3D68BB272D5DF39E00A244A7 /* TFYSwiftTenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB262D5DF39E00A244A7 /* TFYSwiftTenViewController.swift */; };
+		3D68BB292D5DF44B00A244A7 /* TFYSwiftElevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB282D5DF44B00A244A7 /* TFYSwiftElevenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		3D68BAE82D5DCB2F00A244A7 /* TFYSwiftFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftFourViewController.swift; sourceTree = "<group>"; };
 		3D68BB182D5DE9A100A244A7 /* TFYSwiftNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftNavigationBar.swift; sourceTree = "<group>"; };
 		3D68BB1A2D5DEA7C00A244A7 /* TFYSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftUIViewController.swift; sourceTree = "<group>"; };
+		3D68BB1C2D5DF31900A244A7 /* TFYSwiftFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftFiveViewController.swift; sourceTree = "<group>"; };
+		3D68BB1E2D5DF32700A244A7 /* TFYSwiftSexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftSexViewController.swift; sourceTree = "<group>"; };
+		3D68BB202D5DF35600A244A7 /* TFYSwiftSevenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftSevenViewController.swift; sourceTree = "<group>"; };
+		3D68BB222D5DF36B00A244A7 /* TFYSwiftEightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftEightViewController.swift; sourceTree = "<group>"; };
+		3D68BB242D5DF38400A244A7 /* TFYSwiftNineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftNineViewController.swift; sourceTree = "<group>"; };
+		3D68BB262D5DF39E00A244A7 /* TFYSwiftTenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftTenViewController.swift; sourceTree = "<group>"; };
+		3D68BB282D5DF44B00A244A7 /* TFYSwiftElevenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftElevenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +110,13 @@
 				3D68BAE42D5DB63300A244A7 /* TFYSwiftTwoViewController.swift */,
 				3D68BAE62D5DB64800A244A7 /* TFYSwiftTherrViewController.swift */,
 				3D68BAE82D5DCB2F00A244A7 /* TFYSwiftFourViewController.swift */,
+				3D68BB1C2D5DF31900A244A7 /* TFYSwiftFiveViewController.swift */,
+				3D68BB1E2D5DF32700A244A7 /* TFYSwiftSexViewController.swift */,
+				3D68BB202D5DF35600A244A7 /* TFYSwiftSevenViewController.swift */,
+				3D68BB222D5DF36B00A244A7 /* TFYSwiftEightViewController.swift */,
+				3D68BB242D5DF38400A244A7 /* TFYSwiftNineViewController.swift */,
+				3D68BB262D5DF39E00A244A7 /* TFYSwiftTenViewController.swift */,
+				3D68BB282D5DF44B00A244A7 /* TFYSwiftElevenViewController.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -179,13 +200,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D68BB272D5DF39E00A244A7 /* TFYSwiftTenViewController.swift in Sources */,
 				3651961B264F8BAB00177C71 /* AppDelegate.swift in Sources */,
+				3D68BB1F2D5DF32700A244A7 /* TFYSwiftSexViewController.swift in Sources */,
 				3D68BAE72D5DB64800A244A7 /* TFYSwiftTherrViewController.swift in Sources */,
 				3651961C264F8BAB00177C71 /* SceneDelegate.swift in Sources */,
+				3D68BB212D5DF35600A244A7 /* TFYSwiftSevenViewController.swift in Sources */,
+				3D68BB252D5DF38400A244A7 /* TFYSwiftNineViewController.swift in Sources */,
 				3D68BAE52D5DB63300A244A7 /* TFYSwiftTwoViewController.swift in Sources */,
 				3D68BB1B2D5DEA7C00A244A7 /* TFYSwiftUIViewController.swift in Sources */,
 				3D68BB192D5DE9A100A244A7 /* TFYSwiftNavigationBar.swift in Sources */,
+				3D68BB232D5DF36B00A244A7 /* TFYSwiftEightViewController.swift in Sources */,
 				3D68BAE32D5DB62600A244A7 /* TFYSwiftOneViewController.swift in Sources */,
+				3D68BB292D5DF44B00A244A7 /* TFYSwiftElevenViewController.swift in Sources */,
+				3D68BB1D2D5DF31900A244A7 /* TFYSwiftFiveViewController.swift in Sources */,
 				3D68BAE12D5DB60300A244A7 /* TFYSwiftTaBbarController.swift in Sources */,
 				3666A59028221BF50054F22E /* TFYSwiftNavigationController.swift in Sources */,
 				3D68BAE92D5DCB2F00A244A7 /* TFYSwiftFourViewController.swift in Sources */,

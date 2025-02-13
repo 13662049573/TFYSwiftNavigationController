@@ -1,5 +1,5 @@
 //
-//  TFYSwiftTherrViewController.swift
+//  TFYSwiftTenViewController.swift
 //  TFYSwiftNavigationController
 //
 //  Created by mi ni on 2025/2/13.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class TFYSwiftTherrViewController: UIViewController {
-    
+class TFYSwiftTenViewController: UIViewController {
+
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
@@ -27,10 +27,6 @@ class TFYSwiftTherrViewController: UIViewController {
         view.addSubview(descriptionLabel)
         descriptionLabel.frame = CGRect(x: 20, y: 100, width: view.bounds.width - 40, height: 100)
         descriptionLabel.text = "当前展示: \(title ?? "")\n\n这是一个演示页面，用于展示不同的导航栏效果"
-    }
-    
-    override var tfy_useSystemBlurNavBar: BooleanLiteralType {
-        return true
     }
 
 }

@@ -173,7 +173,7 @@ extension UIViewController {
         return fullScreenPopMaxAllowedDistanceToLeftEdge
     }
     
-    /// 子视图是否自动隐藏YCNavigationBae(默认True)
+    /// 子视图是否自动隐藏TFYSwiftNavigationBae(默认True)
     @objc open var tfy_automaticallyHideSYNavBarInChildViewController: Bool {
         if let automaticallyHideSYNavBarInChildViewController = objc_getAssociatedObject(self, &AssociatedKeys.automaticallyHideSYNavBarInChildViewController) as? Bool {
             return automaticallyHideSYNavBarInChildViewController

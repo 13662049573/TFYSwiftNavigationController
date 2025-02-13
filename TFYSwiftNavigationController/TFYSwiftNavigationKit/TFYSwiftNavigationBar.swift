@@ -33,6 +33,12 @@ public struct TFYSwiftNavigationBarStyle {
     public static var fullScreenPopGestureEnabled = false
     /// 调整导航栏 BarButtonItem 距离屏幕左右的间距(0 使用系统的间距 其他动态调整间距)
     public static var itemSpace: CGFloat = 0
+    /// 是否启用全屏滑动返回
+    public static var fullScreenInteractivePopEnabled: Bool = false
+    /// 是否禁用滑动返回
+    public static var disableInteractivePopGesture: Bool = false
+    /// 全屏滑动返回的最大允许距离
+    public static var fullScreenPopMaxAllowedDistanceToLeftEdge: CGFloat = 0.0
 }
 
 /// 自定义导航栏视图
