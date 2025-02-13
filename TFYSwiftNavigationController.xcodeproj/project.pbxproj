@@ -7,76 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		365195CB264F8B5B00177C71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365195C9264F8B5B00177C71 /* Main.storyboard */; };
 		365195CD264F8B5C00177C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365195CC264F8B5C00177C71 /* Assets.xcassets */; };
 		365195D0264F8B5C00177C71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365195CE264F8B5C00177C71 /* LaunchScreen.storyboard */; };
-		365195DB264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195DA264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift */; };
-		365195E6264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365195E5264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift */; };
 		3651961B264F8BAB00177C71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36519609264F8BAB00177C71 /* AppDelegate.swift */; };
 		3651961C264F8BAB00177C71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651960A264F8BAB00177C71 /* SceneDelegate.swift */; };
-		3666A58E28221B020054F22E /* UIViewControllerr+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A58D28221B020054F22E /* UIViewControllerr+NavigationBar.swift */; };
 		3666A59028221BF50054F22E /* TFYSwiftNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A58F28221BF50054F22E /* TFYSwiftNavigationController.swift */; };
-		3666A59228221C1B0054F22E /* TFYSwiftFakeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A59128221C1B0054F22E /* TFYSwiftFakeNavigationBar.swift */; };
-		3666A59628221D8A0054F22E /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A59328221D890054F22E /* DemoViewController.swift */; };
-		3666A59728221D8A0054F22E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A59428221D890054F22E /* ProfileViewController.swift */; };
-		3666A59828221D8A0054F22E /* BarHiddenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666A59528221D890054F22E /* BarHiddenViewController.swift */; };
+		3D68BAE12D5DB60300A244A7 /* TFYSwiftTaBbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BAE02D5DB60300A244A7 /* TFYSwiftTaBbarController.swift */; };
+		3D68BAE32D5DB62600A244A7 /* TFYSwiftOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BAE22D5DB62600A244A7 /* TFYSwiftOneViewController.swift */; };
+		3D68BAE52D5DB63300A244A7 /* TFYSwiftTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BAE42D5DB63300A244A7 /* TFYSwiftTwoViewController.swift */; };
+		3D68BAE72D5DB64800A244A7 /* TFYSwiftTherrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BAE62D5DB64800A244A7 /* TFYSwiftTherrViewController.swift */; };
+		3D68BAE92D5DCB2F00A244A7 /* TFYSwiftFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BAE82D5DCB2F00A244A7 /* TFYSwiftFourViewController.swift */; };
+		3D68BB192D5DE9A100A244A7 /* TFYSwiftNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB182D5DE9A100A244A7 /* TFYSwiftNavigationBar.swift */; };
+		3D68BB1B2D5DEA7C00A244A7 /* TFYSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68BB1A2D5DEA7C00A244A7 /* TFYSwiftUIViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		365195D7264F8B5C00177C71 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 365195B8264F8B5B00177C71 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 365195BF264F8B5B00177C71;
-			remoteInfo = TFYSwiftNavigationController;
-		};
-		365195E2264F8B5C00177C71 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 365195B8264F8B5B00177C71 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 365195BF264F8B5B00177C71;
-			remoteInfo = TFYSwiftNavigationController;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		365195C0264F8B5B00177C71 /* TFYSwiftNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFYSwiftNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		365195CA264F8B5B00177C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		365195CC264F8B5C00177C71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		365195CF264F8B5C00177C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		365195D1264F8B5C00177C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		365195D6264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFYSwiftNavigationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		365195DA264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftNavigationControllerTests.swift; sourceTree = "<group>"; };
-		365195DC264F8B5C00177C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		365195E1264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFYSwiftNavigationControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		365195E5264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftNavigationControllerUITests.swift; sourceTree = "<group>"; };
-		365195E7264F8B5C00177C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36519609264F8BAB00177C71 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3651960A264F8BAB00177C71 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3666A58D28221B020054F22E /* UIViewControllerr+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewControllerr+NavigationBar.swift"; sourceTree = "<group>"; };
 		3666A58F28221BF50054F22E /* TFYSwiftNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftNavigationController.swift; sourceTree = "<group>"; };
-		3666A59128221C1B0054F22E /* TFYSwiftFakeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftFakeNavigationBar.swift; sourceTree = "<group>"; };
-		3666A59328221D890054F22E /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		3666A59428221D890054F22E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		3666A59528221D890054F22E /* BarHiddenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarHiddenViewController.swift; sourceTree = "<group>"; };
+		3D68BAE02D5DB60300A244A7 /* TFYSwiftTaBbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftTaBbarController.swift; sourceTree = "<group>"; };
+		3D68BAE22D5DB62600A244A7 /* TFYSwiftOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftOneViewController.swift; sourceTree = "<group>"; };
+		3D68BAE42D5DB63300A244A7 /* TFYSwiftTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftTwoViewController.swift; sourceTree = "<group>"; };
+		3D68BAE62D5DB64800A244A7 /* TFYSwiftTherrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftTherrViewController.swift; sourceTree = "<group>"; };
+		3D68BAE82D5DCB2F00A244A7 /* TFYSwiftFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftFourViewController.swift; sourceTree = "<group>"; };
+		3D68BB182D5DE9A100A244A7 /* TFYSwiftNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftNavigationBar.swift; sourceTree = "<group>"; };
+		3D68BB1A2D5DEA7C00A244A7 /* TFYSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFYSwiftUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		365195BD264F8B5B00177C71 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		365195D3264F8B5C00177C71 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		365195DE264F8B5C00177C71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,8 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				365195C2264F8B5B00177C71 /* TFYSwiftNavigationController */,
-				365195D9264F8B5C00177C71 /* TFYSwiftNavigationControllerTests */,
-				365195E4264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests */,
 				365195C1264F8B5B00177C71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				365195C0264F8B5B00177C71 /* TFYSwiftNavigationController.app */,
-				365195D6264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.xctest */,
-				365195E1264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +71,6 @@
 				36519608264F8BAB00177C71 /* AppDelegate */,
 				36519602264F8BAB00177C71 /* Class */,
 				365195F3264F8BAB00177C71 /* TFYSwiftNavigationKit */,
-				365195C9264F8B5B00177C71 /* Main.storyboard */,
 				365195CC264F8B5C00177C71 /* Assets.xcassets */,
 				365195CE264F8B5C00177C71 /* LaunchScreen.storyboard */,
 				365195D1264F8B5C00177C71 /* Info.plist */,
@@ -120,30 +78,12 @@
 			path = TFYSwiftNavigationController;
 			sourceTree = "<group>";
 		};
-		365195D9264F8B5C00177C71 /* TFYSwiftNavigationControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				365195DA264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift */,
-				365195DC264F8B5C00177C71 /* Info.plist */,
-			);
-			path = TFYSwiftNavigationControllerTests;
-			sourceTree = "<group>";
-		};
-		365195E4264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				365195E5264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift */,
-				365195E7264F8B5C00177C71 /* Info.plist */,
-			);
-			path = TFYSwiftNavigationControllerUITests;
-			sourceTree = "<group>";
-		};
 		365195F3264F8BAB00177C71 /* TFYSwiftNavigationKit */ = {
 			isa = PBXGroup;
 			children = (
-				3666A58D28221B020054F22E /* UIViewControllerr+NavigationBar.swift */,
 				3666A58F28221BF50054F22E /* TFYSwiftNavigationController.swift */,
-				3666A59128221C1B0054F22E /* TFYSwiftFakeNavigationBar.swift */,
+				3D68BB182D5DE9A100A244A7 /* TFYSwiftNavigationBar.swift */,
+				3D68BB1A2D5DEA7C00A244A7 /* TFYSwiftUIViewController.swift */,
 			);
 			path = TFYSwiftNavigationKit;
 			sourceTree = "<group>";
@@ -151,9 +91,11 @@
 		36519602264F8BAB00177C71 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				3666A59528221D890054F22E /* BarHiddenViewController.swift */,
-				3666A59328221D890054F22E /* DemoViewController.swift */,
-				3666A59428221D890054F22E /* ProfileViewController.swift */,
+				3D68BAE02D5DB60300A244A7 /* TFYSwiftTaBbarController.swift */,
+				3D68BAE22D5DB62600A244A7 /* TFYSwiftOneViewController.swift */,
+				3D68BAE42D5DB63300A244A7 /* TFYSwiftTwoViewController.swift */,
+				3D68BAE62D5DB64800A244A7 /* TFYSwiftTherrViewController.swift */,
+				3D68BAE82D5DCB2F00A244A7 /* TFYSwiftFourViewController.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -187,42 +129,6 @@
 			productReference = 365195C0264F8B5B00177C71 /* TFYSwiftNavigationController.app */;
 			productType = "com.apple.product-type.application";
 		};
-		365195D5264F8B5C00177C71 /* TFYSwiftNavigationControllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 365195ED264F8B5C00177C71 /* Build configuration list for PBXNativeTarget "TFYSwiftNavigationControllerTests" */;
-			buildPhases = (
-				365195D2264F8B5C00177C71 /* Sources */,
-				365195D3264F8B5C00177C71 /* Frameworks */,
-				365195D4264F8B5C00177C71 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				365195D8264F8B5C00177C71 /* PBXTargetDependency */,
-			);
-			name = TFYSwiftNavigationControllerTests;
-			productName = TFYSwiftNavigationControllerTests;
-			productReference = 365195D6264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		365195E0264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 365195F0264F8B5C00177C71 /* Build configuration list for PBXNativeTarget "TFYSwiftNavigationControllerUITests" */;
-			buildPhases = (
-				365195DD264F8B5C00177C71 /* Sources */,
-				365195DE264F8B5C00177C71 /* Frameworks */,
-				365195DF264F8B5C00177C71 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				365195E3264F8B5C00177C71 /* PBXTargetDependency */,
-			);
-			name = TFYSwiftNavigationControllerUITests;
-			productName = TFYSwiftNavigationControllerUITests;
-			productReference = 365195E1264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -235,14 +141,6 @@
 				TargetAttributes = {
 					365195BF264F8B5B00177C71 = {
 						CreatedOnToolsVersion = 12.5;
-					};
-					365195D5264F8B5C00177C71 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 365195BF264F8B5B00177C71;
-					};
-					365195E0264F8B5C00177C71 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 365195BF264F8B5B00177C71;
 					};
 				};
 			};
@@ -260,8 +158,6 @@
 			projectRoot = "";
 			targets = (
 				365195BF264F8B5B00177C71 /* TFYSwiftNavigationController */,
-				365195D5264F8B5C00177C71 /* TFYSwiftNavigationControllerTests */,
-				365195E0264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,21 +169,6 @@
 			files = (
 				365195D0264F8B5C00177C71 /* LaunchScreen.storyboard in Resources */,
 				365195CD264F8B5C00177C71 /* Assets.xcassets in Resources */,
-				365195CB264F8B5B00177C71 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		365195D4264F8B5C00177C71 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		365195DF264F8B5C00177C71 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,56 +180,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3651961B264F8BAB00177C71 /* AppDelegate.swift in Sources */,
-				3666A59228221C1B0054F22E /* TFYSwiftFakeNavigationBar.swift in Sources */,
+				3D68BAE72D5DB64800A244A7 /* TFYSwiftTherrViewController.swift in Sources */,
 				3651961C264F8BAB00177C71 /* SceneDelegate.swift in Sources */,
-				3666A59628221D8A0054F22E /* DemoViewController.swift in Sources */,
+				3D68BAE52D5DB63300A244A7 /* TFYSwiftTwoViewController.swift in Sources */,
+				3D68BB1B2D5DEA7C00A244A7 /* TFYSwiftUIViewController.swift in Sources */,
+				3D68BB192D5DE9A100A244A7 /* TFYSwiftNavigationBar.swift in Sources */,
+				3D68BAE32D5DB62600A244A7 /* TFYSwiftOneViewController.swift in Sources */,
+				3D68BAE12D5DB60300A244A7 /* TFYSwiftTaBbarController.swift in Sources */,
 				3666A59028221BF50054F22E /* TFYSwiftNavigationController.swift in Sources */,
-				3666A59728221D8A0054F22E /* ProfileViewController.swift in Sources */,
-				3666A58E28221B020054F22E /* UIViewControllerr+NavigationBar.swift in Sources */,
-				3666A59828221D8A0054F22E /* BarHiddenViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		365195D2264F8B5C00177C71 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				365195DB264F8B5C00177C71 /* TFYSwiftNavigationControllerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		365195DD264F8B5C00177C71 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				365195E6264F8B5C00177C71 /* TFYSwiftNavigationControllerUITests.swift in Sources */,
+				3D68BAE92D5DCB2F00A244A7 /* TFYSwiftFourViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		365195D8264F8B5C00177C71 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 365195BF264F8B5B00177C71 /* TFYSwiftNavigationController */;
-			targetProxy = 365195D7264F8B5C00177C71 /* PBXContainerItemProxy */;
-		};
-		365195E3264F8B5C00177C71 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 365195BF264F8B5B00177C71 /* TFYSwiftNavigationController */;
-			targetProxy = 365195E2264F8B5C00177C71 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		365195C9264F8B5B00177C71 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				365195CA264F8B5B00177C71 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		365195CE264F8B5C00177C71 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -520,86 +366,6 @@
 			};
 			name = Release;
 		};
-		365195EE264F8B5C00177C71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH95759TSS;
-				INFOPLIST_FILE = TFYSwiftNavigationControllerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tfy.TFYSwiftNavigationControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFYSwiftNavigationController.app/TFYSwiftNavigationController";
-			};
-			name = Debug;
-		};
-		365195EF264F8B5C00177C71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH95759TSS;
-				INFOPLIST_FILE = TFYSwiftNavigationControllerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tfy.TFYSwiftNavigationControllerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFYSwiftNavigationController.app/TFYSwiftNavigationController";
-			};
-			name = Release;
-		};
-		365195F1264F8B5C00177C71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH95759TSS;
-				INFOPLIST_FILE = TFYSwiftNavigationControllerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tfy.TFYSwiftNavigationControllerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TFYSwiftNavigationController;
-			};
-			name = Debug;
-		};
-		365195F2264F8B5C00177C71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH95759TSS;
-				INFOPLIST_FILE = TFYSwiftNavigationControllerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tfy.TFYSwiftNavigationControllerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TFYSwiftNavigationController;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -617,24 +383,6 @@
 			buildConfigurations = (
 				365195EB264F8B5C00177C71 /* Debug */,
 				365195EC264F8B5C00177C71 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		365195ED264F8B5C00177C71 /* Build configuration list for PBXNativeTarget "TFYSwiftNavigationControllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				365195EE264F8B5C00177C71 /* Debug */,
-				365195EF264F8B5C00177C71 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		365195F0264F8B5C00177C71 /* Build configuration list for PBXNativeTarget "TFYSwiftNavigationControllerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				365195F1264F8B5C00177C71 /* Debug */,
-				365195F2264F8B5C00177C71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
