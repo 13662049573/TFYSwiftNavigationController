@@ -22,7 +22,7 @@ class TFYSwiftTaBbarController: UITabBarController {
         let oneNav = TFYSwiftNavigationController(rootViewController: oneVC)
         oneNav.tabBarItem = UITabBarItem(title: "基础", image: UIImage(systemName: "1.circle"), selectedImage: UIImage(systemName: "1.circle.fill"))
         
-        let twoVC = TFYSwiftTwoViewController()
+        let twoVC = TFYSwiftTenViewController()
         twoVC.title = "样式切换"
         let twoNav = TFYSwiftNavigationController(rootViewController: twoVC)
         twoNav.tabBarItem = UITabBarItem(title: "样式", image: UIImage(systemName: "2.circle"), selectedImage: UIImage(systemName: "2.circle.fill"))

@@ -39,6 +39,7 @@ public struct TFYSwiftNavigationBarStyle {
     public static var disableInteractivePopGesture: Bool = false
     /// 全屏滑动返回的最大允许距离
     public static var fullScreenPopMaxAllowedDistanceToLeftEdge: CGFloat = 0.0
+  
 }
 
 /// 自定义导航栏视图

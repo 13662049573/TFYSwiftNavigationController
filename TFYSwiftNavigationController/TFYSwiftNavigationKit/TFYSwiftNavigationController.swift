@@ -87,7 +87,7 @@ extension UINavigationController {
         navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationBar.shadowImage = UIImage()
         navigationBar.isTranslucent = true
-        
+       
         tfy_gestureDelegate = TFYSwiftNavigationGestureRecognizerDelegate(navigationController: self)
         interactivePopGestureRecognizer?.delegate = tfy_gestureDelegate
     }

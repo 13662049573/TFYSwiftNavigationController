@@ -9,12 +9,13 @@ import UIKit
 
 class TFYSwiftFourViewController: UIViewController {
     
-    private lazy var descriptionLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.textAlignment = .center
-        label.font = .systemFont(ofSize: 16)
-        return label
+    private lazy var tableview: UITableView = {
+        let view = UITableView(frame: view.bounds, style: .plain)
+        view.delegate = self
+        view.dataSource = self
+        view.rowHeight = 50
+        view.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return view
     }()
 
     override func viewDidLoad() {
@@ -24,12 +25,33 @@ class TFYSwiftFourViewController: UIViewController {
     }
     
     private func setupUI() {
-        view.addSubview(descriptionLabel)
-        descriptionLabel.frame = CGRect(x: 20, y: 100, width: view.bounds.width - 40, height: 100)
-        descriptionLabel.text = "当前展示: \(title ?? "")\n\n这是一个演示页面，用于展示不同的导航栏效果"
+        view.addSubview(tableview)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.tableview.frame = view.bounds
     }
     
     override var tfy_navigationBarBackgroundColor: UIColor? {
         return .clear
+    }
+}
+
+extension TFYSwiftFourViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 40
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.text = "\(indexPath.row)"
+        
+        cell.contentView.backgroundColor = .blue
+        
+        return cell
     }
 }
