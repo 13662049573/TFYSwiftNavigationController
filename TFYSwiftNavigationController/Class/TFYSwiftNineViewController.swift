@@ -26,10 +26,14 @@ class TFYSwiftNineViewController: UIViewController {
     private func setupUI() {
         view.addSubview(descriptionLabel)
         descriptionLabel.frame = CGRect(x: 20, y: 100, width: view.bounds.width - 40, height: 100)
-        descriptionLabel.text = "当前展示: \(title ?? "")\n\n这是一个演示页面，用于展示不同的导航栏效果"
+        descriptionLabel.text = "当前展示: \(title ?? "")\n\n这是一个演示页面，用于展示自定义滑动返回距离效果"
+    }
+
+    override var tfy_fullScreenInteractivePopEnabled: Bool {
+        return true
     }
 
     override var tfy_fullScreenPopMaxAllowedDistanceToLeftEdge: CGFloat {
-        return 100
+        return 200
     }
 }
