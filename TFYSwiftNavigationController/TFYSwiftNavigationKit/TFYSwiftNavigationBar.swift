@@ -99,7 +99,7 @@ public class TFYSwiftNavigationBar: UIView {
     
     public override func layoutSubviews() {
         super.layoutSubviews()
-        
+       
         visualEffectView.frame = bounds
         backgroundImageView.frame = bounds
         
@@ -136,6 +136,7 @@ public class TFYSwiftNavigationBar: UIView {
         UIViewController.swizzleUIViewControllerOnce
         UINavigationController.swizzleUINavigationControllerOnce
     }
+
 }
 
 
@@ -165,6 +166,7 @@ extension UINavigationBar {
     /// 加载布局
     @objc private func nav_layoutSubviews() {
         frameDidUpdated?(frame)
+        effectBackdropView()
         nav_layoutSubviews()
         
         /// UIBarButtonItem 距离屏幕的左右间距
@@ -187,6 +189,21 @@ extension UINavigationBar {
                     break
                 }
             }
+        }
+    }
+    
+    private func effectBackdropView() {
+        let viewbacks:[UIView] = subviews
+        viewbacks.forEach { view in
+            if view.isKind(of:NSClassFromString("UIVisualEffectView")!) {
+                let effectViews:[UIView] = view.subviews
+                effectViews.forEach { effView in
+                    if effView.isKind(of: NSClassFromString("_UIVisualEffectBackdropView")!) {
+                        effView.removeFromSuperview()
+                    }
+                }
+            }
+            
         }
     }
 }

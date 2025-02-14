@@ -11,9 +11,34 @@ public class TFYSwiftNavigationController: UINavigationController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
+        removedimmingView()
         TFYSwiftNavigationBar.setup()
         TFYSwiftNavigationBarStyle.backgroundColor = .secondarySystemBackground
+    }
+    
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        removedimmingView()
+    }
+    
+    private func removedimmingView() {
+        let viewsArr:[UIView] = view.subviews
+        viewsArr.forEach { view in
+            if view.isKind(of: NSClassFromString("UINavigationTransitionView")!) {
+                let views:[UIView] = view.subviews
+                views.forEach { subView in
+                    if subView.isKind(of: NSClassFromString("UIViewControllerWrapperView")!) {
+                        let perViews:[UIView] = subView.subviews
+                        perViews.forEach { perView in
+                            if perView.isKind(of: NSClassFromString("_UIParallaxDimmingView")!) {
+                                perView.backgroundColor = .clear
+                                perView.removeFromSuperview()
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
