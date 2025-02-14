@@ -148,7 +148,7 @@ extension UINavigationBar {
     /// UINavigationBar swizzleMethod
     static let swizzleUINavigationBarOnce: Void = {
         let cls = UINavigationBar.self
-        TFYSwiftNavigationBarUtility.swizzleMethod(cls, #selector(UINavigationBar.layoutSubviews), #selector(UINavigationBar.sy_layoutSubviews))
+        TFYSwiftNavigationBarUtility.swizzleMethod(cls, #selector(UINavigationBar.layoutSubviews), #selector(UINavigationBar.nav_layoutSubviews))
     }()
     
     /// frame改变的回调
@@ -162,9 +162,9 @@ extension UINavigationBar {
     }
 
     /// 加载布局
-    @objc private func sy_layoutSubviews() {
+    @objc private func nav_layoutSubviews() {
         frameDidUpdated?(frame)
-        sy_layoutSubviews()
+        nav_layoutSubviews()
         
         /// UIBarButtonItem 距离屏幕的左右间距
         if TFYSwiftNavigationBarStyle.itemSpace > 0 {

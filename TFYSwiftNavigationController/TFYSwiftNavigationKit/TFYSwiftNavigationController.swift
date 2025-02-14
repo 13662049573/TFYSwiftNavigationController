@@ -29,9 +29,9 @@ extension UINavigationController {
     }
     
     /// 关联gestureDelegate
-    private var tfy_gestureDelegate: SYNavigationGestureRecognizerDelegate? {
+    private var tfy_gestureDelegate: TFYSwiftNavigationGestureRecognizerDelegate? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.gestureDelegate) as? SYNavigationGestureRecognizerDelegate
+            return objc_getAssociatedObject(self, &AssociatedKeys.gestureDelegate) as? TFYSwiftNavigationGestureRecognizerDelegate
         }
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.gestureDelegate, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -88,7 +88,7 @@ extension UINavigationController {
         navigationBar.shadowImage = UIImage()
         navigationBar.isTranslucent = true
         
-        tfy_gestureDelegate = SYNavigationGestureRecognizerDelegate(navigationController: self)
+        tfy_gestureDelegate = TFYSwiftNavigationGestureRecognizerDelegate(navigationController: self)
         interactivePopGestureRecognizer?.delegate = tfy_gestureDelegate
     }
     
@@ -179,7 +179,7 @@ extension UINavigationController {
 // MARK: - fileprivate
 
 /// 导航栏默认手势代理对象
-fileprivate class SYNavigationGestureRecognizerDelegate: NSObject, UIGestureRecognizerDelegate {
+fileprivate class TFYSwiftNavigationGestureRecognizerDelegate: NSObject, UIGestureRecognizerDelegate {
     
     fileprivate weak var navigationController: UINavigationController?
     
