@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFYSwiftNavigationKit"
 
-  spec.version      = "2.1.8"
+  spec.version      = "2.1.9"
 
   spec.summary      = "Swift版的 导航栏设置，基本需求都可以满足，最新支持 iOS 15 -- Swift 5 "
 
