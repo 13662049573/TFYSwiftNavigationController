@@ -208,6 +208,13 @@ extension UINavigationBar {
     }
 }
 
+public extension UIBarButtonItem {
+    func configure(_ block: (UIBarButtonItem) -> Void) -> UIBarButtonItem {
+        block(self)
+        return self
+    }
+}
+
 /// TFYSwiftNavigationBar 工具类
 class TFYSwiftNavigationBarUtility {
     
