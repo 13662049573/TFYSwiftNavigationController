@@ -13,16 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        if #available(iOS 13.0, *) {
-            // iOS 13 以上使用 SceneDelegate
-            return true
-        } else {
-            window = UIWindow(frame: UIScreen.main.bounds)
-            let tabBarController = TFYSwiftTaBbarController()
-            window?.rootViewController = tabBarController
-            window?.makeKeyAndVisible()
-            return true
-        }
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let tabBarController = TFYSwiftTaBbarController()
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        return true
     }
 
     // MARK: UISceneSession Lifecycle
