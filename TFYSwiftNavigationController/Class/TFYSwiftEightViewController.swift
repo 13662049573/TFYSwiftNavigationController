@@ -7,7 +7,7 @@
 
 import UIKit
 
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 class TFYSwiftEightViewController: UIViewController {
     
     private lazy var infoLabel: UILabel = {

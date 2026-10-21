@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: - Custom Navigation Controller
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public class TFYSwiftNavigationController: UINavigationController {
 
     public override func viewDidLoad() {
@@ -42,7 +42,7 @@ public class TFYSwiftNavigationController: UINavigationController {
 }
 
 // MARK: - UINavigationController Extension
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 extension UINavigationController {
     
     /// 关联对象的keys
@@ -109,9 +109,8 @@ extension UINavigationController {
     
     /// 配置NavigationBar
     func configureNavigationBar() {
-        navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationBar.shadowImage = UIImage()
         navigationBar.isTranslucent = true
+        navigationBar.applyTFYTransparentAppearance()
        
         tfy_gestureDelegate = TFYSwiftNavigationGestureRecognizerDelegate(navigationController: self)
         interactivePopGestureRecognizer?.delegate = tfy_gestureDelegate
@@ -192,7 +191,7 @@ extension UINavigationController {
 }
 
 // MARK: - Gesture Recognizer Delegates
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 /// 导航栏默认手势代理对象
 fileprivate class TFYSwiftNavigationGestureRecognizerDelegate: NSObject, UIGestureRecognizerDelegate {
     
@@ -215,7 +214,7 @@ fileprivate class TFYSwiftNavigationGestureRecognizerDelegate: NSObject, UIGestu
     }
 }
 
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 /// 自定义全屏返回手势代理对象
 fileprivate class TFYSwiftFullscreenPopGestureRecognizerDelegate: NSObject, UIGestureRecognizerDelegate {
     
@@ -255,7 +254,7 @@ fileprivate class TFYSwiftFullscreenPopGestureRecognizerDelegate: NSObject, UIGe
         }
 
         let translation = gestureRecognizer.translation(in: gestureRecognizer.view)
-        let isLeftToRight = UIApplication.shared.userInterfaceLayoutDirection == .leftToRight
+        let isLeftToRight = navigationController.view.traitCollection.layoutDirection == .leftToRight
         let multiplier: CGFloat = isLeftToRight ? 1: -1
         if translation.x * multiplier <= 0 {
             return false
