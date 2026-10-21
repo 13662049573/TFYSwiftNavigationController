@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/TFYSwiftNavigationKit.svg?style=flat)](https://cocoapods.org/pods/TFYSwiftNavigationKit)
 [![Platform](https://img.shields.io/cocoapods/p/TFYSwiftNavigationKit.svg?style=flat)](https://cocoapods.org/pods/TFYSwiftNavigationKit)
 [![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
-[![iOS](https://img.shields.io/badge/iOS-15.0+-blue.svg)](https://developer.apple.com/ios/)
+[![iOS](https://img.shields.io/badge/iOS-16.0+-blue.svg)](https://developer.apple.com/ios/)
 
 <div align="center">
   <img src="https://img.shields.io/badge/Performance-Optimized-green.svg" alt="Performance Optimized">
@@ -15,13 +15,13 @@
 
 ## 📖 简介
 
-**TFYSwiftNavigationKit** 是一个专为 iOS 15+ 设计的高性能、现代化的 Swift 导航栏管理库。它提供了完整的导航栏自定义解决方案，支持流畅的动画效果、内存优化、异步布局等高级特性。
+**TFYSwiftNavigationKit** 是一个专为 iOS 16+ 设计的高性能、现代化的 Swift 导航栏管理库。它提供了完整的导航栏自定义解决方案，支持流畅的动画效果、内存优化、异步布局等高级特性。
 
 ### ✨ 核心优势
 
 - 🚀 **高性能优化** - 采用异步布局、智能缓存、内存管理
 - 🎨 **完全自定义** - 支持背景、阴影、毛玻璃、渐变等效果
-- 📱 **现代化设计** - 专为 iOS 15+ 优化，支持最新系统特性
+- 📱 **现代化设计** - 专为 iOS 16+ 优化，支持最新系统特性
 - 🔧 **易于集成** - 简单的 API 设计，快速上手
 - 🛡️ **稳定可靠** - 经过严格测试，生产环境验证
 
@@ -55,7 +55,7 @@
 
 ## 📋 系统要求
 
-- **iOS 15.0+** - 支持最新的 iOS 系统
+- **iOS 16.0+** - 支持最新的 iOS 系统
 - **Swift 5.0+** - 使用最新的 Swift 语法
 - **Xcode 13.0+** - 支持最新的开发工具
 

@@ -13,7 +13,7 @@ typealias TFYSwiftNavigationBarFrameDidUpdated = (CGRect) -> Void
 
 // MARK: - Navigation Bar Style Configuration
 /// 导航栏默认样式配置
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public struct TFYSwiftNavigationBarStyle {
     /// 导航栏返回按钮图片
     public static var backImage: UIImage? = TFYSwiftNavigationBarUtility.backImage
@@ -46,7 +46,7 @@ public struct TFYSwiftNavigationBarStyle {
 
 // MARK: - Custom Navigation Bar View
 /// 自定义导航栏视图
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public class TFYSwiftNavigationBar: UIView {
     
     // MARK: - UI Components
@@ -174,7 +174,7 @@ public class TFYSwiftNavigationBar: UIView {
 }
 
 // MARK: - UINavigationBar Extension
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 extension UINavigationBar {
     
     /// 关联对象Keys
@@ -227,6 +227,23 @@ extension UINavigationBar {
         }
     }
     
+    /// Applies the given appearance to every navigation bar appearance slot (iOS 16+).
+    func applyTFYAppearance(_ appearance: UINavigationBarAppearance) {
+        standardAppearance = appearance
+        scrollEdgeAppearance = appearance
+        compactAppearance = appearance
+        compactScrollEdgeAppearance = appearance
+    }
+
+    /// Transparent system navigation bar used alongside the custom TFY navigation bar.
+    func applyTFYTransparentAppearance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.backgroundImage = UIImage()
+        appearance.shadowImage = UIImage()
+        applyTFYAppearance(appearance)
+    }
+
     private func effectBackdropView() {
         let viewbacks: [UIView] = subviews
         viewbacks.forEach { view in
@@ -243,7 +260,7 @@ extension UINavigationBar {
 }
 
 // MARK: - UIBarButtonItem Extension
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public extension UIBarButtonItem {
     func configure(_ block: (UIBarButtonItem) -> Void) -> UIBarButtonItem {
         block(self)
@@ -252,7 +269,7 @@ public extension UIBarButtonItem {
 }
 
 // MARK: - Utility Class
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 class TFYSwiftNavigationBarUtility {
     
     /// 导航栏返回按钮图片
@@ -282,12 +299,11 @@ class TFYSwiftNavigationBarUtility {
     /// 颜色转图片
     public class func imageFrom(color: UIColor) -> UIImage? {
         let size = CGSize(width: 1, height: 1)
-        UIGraphicsBeginImageContextWithOptions(size, false, 0)
-        color.setFill()
-        UIRectFill(CGRect(origin: CGPoint.zero, size: size))
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image
+        let renderer = UIGraphicsImageRenderer(size: size)
+        return renderer.image { context in
+            color.setFill()
+            context.fill(CGRect(origin: .zero, size: size))
+        }
     }
     
     /// 方法交换
@@ -307,7 +323,7 @@ class TFYSwiftNavigationBarUtility {
 }
 
 // MARK: - Associated Object Manager
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 class TFYSwiftAssociatedObjectManager {
     
     /// 获取关联对象

@@ -41,14 +41,12 @@ class TFYSwiftTaBbarController: UITabBarController {
     
     private func setupTabBarAppearance() {
         // 设置TabBar外观
-        if #available(iOS 15.0, *) {
-            let appearance = UITabBarAppearance()
-            appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = .white
-            
-            tabBar.standardAppearance = appearance
-            tabBar.scrollEdgeAppearance = appearance
-        }
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .white
+
+        tabBar.standardAppearance = appearance
+        tabBar.scrollEdgeAppearance = appearance
         
         // 设置TabBar的颜色
         tabBar.tintColor = .systemBlue

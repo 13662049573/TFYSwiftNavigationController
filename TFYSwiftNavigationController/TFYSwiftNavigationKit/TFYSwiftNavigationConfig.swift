@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 // MARK: - Navigation Configuration
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public struct TFYSwiftNavigationConfig {
     
     // MARK: - Performance Settings
@@ -58,7 +58,7 @@ public struct TFYSwiftNavigationConfig {
 }
 
 // MARK: - Performance Monitor
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public class TFYSwiftNavigationPerformanceMonitor {
     
     private static var performanceMetrics: [String: TimeInterval] = [:]
@@ -83,7 +83,7 @@ public class TFYSwiftNavigationPerformanceMonitor {
 }
 
 // MARK: - Cache Manager
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public class TFYSwiftNavigationCacheManager {
     
     private static var imageCache: NSCache<NSString, UIImage> = {
@@ -127,7 +127,7 @@ public class TFYSwiftNavigationCacheManager {
 }
 
 // MARK: - Memory Manager
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public class TFYSwiftNavigationMemoryManager {
     
     private static var weakReferences: [String: WeakReference] = [:]
@@ -163,7 +163,7 @@ public class TFYSwiftNavigationMemoryManager {
 }
 
 // MARK: - Async Layout Manager
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public class TFYSwiftNavigationAsyncLayoutManager {
     
     private static let layoutQueue = DispatchQueue(label: "com.tfy.navigation.layout", qos: .userInteractive)
@@ -187,7 +187,7 @@ public class TFYSwiftNavigationAsyncLayoutManager {
 }
 
 // MARK: - Configuration Validator
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public class TFYSwiftNavigationConfigValidator {
     
     /// 验证配置的有效性

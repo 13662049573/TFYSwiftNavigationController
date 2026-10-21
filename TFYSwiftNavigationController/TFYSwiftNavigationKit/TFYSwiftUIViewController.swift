@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 // MARK: - UIViewController Extension
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 extension UIViewController {
     
     /// 关联对象的Keys
@@ -361,7 +361,7 @@ extension UIViewController {
 }
 
 // MARK: - Private Work
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 extension UIViewController {
     
     /// UIViewController swizzleMethod
@@ -458,9 +458,19 @@ extension UIViewController {
     
     /// 配置系统导航栏
     private func configureSystemNavigationBar(_ navigationController: UINavigationController) {
-        navigationController.navigationBar.barTintColor = tfy_barTintColor
-        navigationController.navigationBar.tintColor = tfy_tintColor
-        navigationController.navigationBar.titleTextAttributes = tfy_titleTextAttributes
+        let navigationBar = navigationController.navigationBar
+        navigationBar.tintColor = tfy_tintColor
+
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithDefaultBackground()
+        if let barTintColor = tfy_barTintColor {
+            appearance.backgroundColor = barTintColor
+        }
+        if let titleTextAttributes = tfy_titleTextAttributes {
+            appearance.titleTextAttributes = titleTextAttributes
+        }
+        navigationBar.applyTFYAppearance(appearance)
+
         view.bringSubviewToFront(tfy_navigationBar)
     }
     

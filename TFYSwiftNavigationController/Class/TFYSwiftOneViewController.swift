@@ -7,7 +7,7 @@
 
 import UIKit
 
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 class TFYSwiftOneViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
@@ -79,7 +79,7 @@ class TFYSwiftOneViewController: UIViewController {
 }
 
 // MARK: - UITableViewDelegate & DataSource
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 extension TFYSwiftOneViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return demos.count

@@ -7,7 +7,7 @@
 
 import UIKit
 
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 class TFYSwiftFourViewController: UIViewController {
     
     private lazy var tableview: UITableView = {
@@ -101,7 +101,7 @@ class TFYSwiftFourViewController: UIViewController {
     }
 }
 
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 extension TFYSwiftFourViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
